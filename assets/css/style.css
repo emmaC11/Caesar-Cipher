@@ -14,9 +14,14 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #be83f1;
 }
 
 /* HEADING */
 .title {
     font-family: 'Roboto Mono', monospace;
+}
+
+.cipher-container{
+    background-color: white;
 }
