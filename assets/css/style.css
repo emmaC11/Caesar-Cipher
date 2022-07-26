@@ -8,13 +8,21 @@ font-family: 'Roboto Mono', monospace; */
     border:0;
 }
 
+:root{
+    --pink: #e680c7;
+    --purple: #be83f1;
+    --blue: #7439fa;
+    --darkgrey: #6b6969;
+    --lightgrey: #a6a6a6;
+}
+
 html{
     font-size: 62.5%;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #be83f1;
+    background-color: var(--purple);
 }
 
 /* HEADING */
