@@ -50,9 +50,14 @@ body{
 }
 
 .encrypt-decrypt{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
 }
+
 
