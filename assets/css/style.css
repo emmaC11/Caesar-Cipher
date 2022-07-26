@@ -25,17 +25,27 @@ body{
     background-color: var(--purple);
 }
 
+.cipher-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cipher-content{
+    background-color: #fff;
+    margin: 5rem;
+    border-radius: 3rem;
+    text-align: center;
+    height: 60rem;
+    width: 90%;
+    border: 5px solid var(--darkgrey);
+}
+
 /* HEADING */
 .title {
     font-family: 'Roboto Mono', monospace;
+    color: var(--blue);
+    letter-spacing: 4px;
+    margin: 2rem;
 }
 
-.cipher-container{
-    background-color: #fff;
-    margin: 0 auto;
-    margin: 5rem;
-    border-radius: 1rem;
-    text-align: center;
-    height: 80rem;
-    border: 4px solid black;
-}
