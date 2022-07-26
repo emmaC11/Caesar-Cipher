@@ -32,7 +32,17 @@
                     <br>
                     <button onclick="generateMessage()">Encrypt</button>
                 </div>
-                <div class="decrypt">this is decrypt</div>
+                <div class="decrypt">
+                    <label for="d-message">Message to decrypt:</label>
+                    <br>
+                    <input class="text-input" type="text" id="d-message" name="d-message" required>
+                    <br>
+                    <label for="d-key">Key Number:</label>
+                    <br>
+                    <input class="text-input" type="text" id="d-key" name="d-key" required>
+                    <br>
+                    <button onclick="generateMessage()">Decrypt</button>
+                </div>
             </div>
         </div>
 
