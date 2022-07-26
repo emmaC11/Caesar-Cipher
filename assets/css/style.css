@@ -5,3 +5,8 @@ font-family: 'Roboto Mono', monospace; */
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* HEADING */
+.title {
+    font-family: 'Roboto Mono', monospace;
+}
