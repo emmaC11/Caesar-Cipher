@@ -90,7 +90,7 @@ body{
     
 }
 
-#encrypt{
+#encrypt, #decrypt{
     margin-bottom: 3rem;
 }
 
