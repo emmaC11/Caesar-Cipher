@@ -91,7 +91,11 @@ body{
 }
 
 #encrypt, #decrypt{
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+}
+
+.message{
+    border: 2px solid var(--darkgrey);
 }
 
 
