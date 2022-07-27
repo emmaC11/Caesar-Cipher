@@ -38,7 +38,7 @@ body{
     text-align: center;
     height: 60rem;
     width: 90%;
-    border: 5px solid var(--darkgrey);
+    border: 1rem solid black;
 }
 
 /* HEADING */
@@ -80,7 +80,7 @@ body{
 
 .encrypt-decrypt button{
     background-color: var(--pink);
-    border-radius: 5px;
+    border-radius: 1rem;
     padding: 1.5rem 3.2rem;
     text-align: center;
     text-transform: uppercase;
