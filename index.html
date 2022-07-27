@@ -31,6 +31,12 @@
                     <input class="text-input" type="text" id="e-key" name="e-key" required>
                     <br>
                     <button id="encrypt" onclick="generateMessage()">Encrypt</button>
+
+                    <div class="encrypted-message">
+                        <label for="e-text">Encrypted Text:</label>
+                        <br>
+                        <input class="text-input" type="text" id="e-text" name="e-text" readonly>
+                    </div>
                 </div>
                 <div class="decrypt">
                     <label for="d-message">Message to decrypt:</label>
