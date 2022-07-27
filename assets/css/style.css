@@ -22,7 +22,9 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--purple);
+    /* background-color: var(--purple); */
+    background: rgb(190,131,241);
+    background: linear-gradient(90deg, rgba(190,131,241,1) 0%, rgba(190,131,241,1) 35%, rgba(230,128,199,1) 100%);
 }
 
 .cipher-container{
@@ -47,6 +49,7 @@ body{
     color: var(--blue);
     letter-spacing: 4px;
     margin: 2rem;
+    font-size: 3rem;
 }
 
 .encrypt-decrypt{
