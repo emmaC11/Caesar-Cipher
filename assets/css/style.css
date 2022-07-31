@@ -72,10 +72,11 @@ body{
 
 .encrypt-decrypt .text-input{
     border: 2px solid var(--pink);
-    padding: 0.5rem;
+    padding: 1.2rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    width: 30rem;
 }
 
 .encrypt-decrypt .text-input:hover{
