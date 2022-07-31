@@ -111,6 +111,10 @@ body{
     .message{
        margin-bottom: 2rem;
     }
+    .encrypt-decrypt .text-input{
+        width: 15rem;
+        padding: 0.5rem;
+    }
 }
 
 
