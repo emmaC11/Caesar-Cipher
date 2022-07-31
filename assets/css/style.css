@@ -43,12 +43,7 @@ body{
     border: 1rem solid black;
 }
 
-@media only screen and (max-width: 525px) {
-    .cipher-content{
-        height: 100rem;
-        margin: 2rem;
-    }
-}
+
 
 /* HEADING */
 .title {
@@ -105,6 +100,16 @@ body{
     border: 3px solid var(--darkgrey);
     border-radius: 2rem;
     padding: 3rem 2rem;
+}
+
+@media only screen and (max-width: 525px) {
+    .cipher-content{
+        height: 105rem;
+        margin: 2rem;
+    }
+    .message{
+       margin-bottom: 2rem;
+    }
 }
 
 
