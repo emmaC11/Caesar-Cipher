@@ -20,13 +20,16 @@ document.addEventListener("DOMContentLoaded",function()
 }
 )
 
-function encryptInputs()
+function getEncryptMessage()
 {
-  let eMessage = document.getElementById('e-message').value;
-  let eKey = document.getElementById('e-key').value;
-  return eMessage, eKey;
-  
-  
+    let eMessage = document.getElementById('e-message').value;
+    return eMessage;
+}
+
+function getEncryptKey()
+{
+    let eKey = document.getElementById('e-key').value;
+    return eKey;
 }
 
 //variable that stores all letters user can input
