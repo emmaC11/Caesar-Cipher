@@ -29,7 +29,15 @@ function getEncryptMessage()
 function getEncryptKey()
 {
     let eKey = document.getElementById('e-key').value;
-    return eKey;
+    if(eKey >=1 && key <= max_key_length)
+    {
+        return eKey;
+    }
+    else
+    {
+        alert("The key is out of range");
+    }
+   
 }
 
 //variable that stores all letters user can input
