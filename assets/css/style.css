@@ -43,6 +43,14 @@ body{
 .user-options{
     margin: 2rem
 }
+
+#prompt{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    font-size: 1.8rem;
+}
+
 .choice-buttons{
     display: flex;
     flex-wrap: wrap;
