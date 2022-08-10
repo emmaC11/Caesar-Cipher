@@ -91,12 +91,15 @@ body{
     opacity: 1;
 }
 
+.modal-header{
+    text-transform: uppercase;
+}
+
 .modal-content{
     width: 80%;
-    border: 5px solid red;
-    border-radius: 1.5rem;
     padding: 2rem;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .cipher-container{
