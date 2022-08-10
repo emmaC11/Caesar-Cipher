@@ -1,9 +1,18 @@
 let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let max_key_length = letters.length
 
-const openModal = document.getElementById('help-modal')
-const closeModal = document.getElementsByClassName('close')
-const modal = document.getElementById('helpModal')
+const openModal = document.getElementById('help-modal');
+const closeModal = document.getElementsByClassName('close');
+const modal = document.getElementById('helpModal');
+
+openModal.addEventListener("click", () => {
+    modal.classList.add("show");
+  });
+  
+  // Close Modal
+  closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+  });
 
 document.addEventListener("DOMContentLoaded",function() 
 {
