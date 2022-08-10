@@ -11,6 +11,7 @@ font-family: 'Roboto Mono', monospace; */
 :root{
     --pink: #e680c7;
     --purple: #be83f1;
+    --darkpurple: #7f39fb; 
     --blue: #7439fa;
     --darkgrey: #6b6969;
     --lightgrey: #a6a6a6;
@@ -23,10 +24,9 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     /* background-color: var(--purple); */
-    background: rgb(190,131,241);
-    background: linear-gradient(90deg, rgba(190,131,241,1) 0%, rgba(190,131,241,1) 35%, rgba(230,128,199,1) 100%);
+    /* background: rgb(190,131,241);
+    background: linear-gradient(90deg, rgba(190,131,241,1) 0%, rgba(190,131,241,1) 35%, rgba(230,128,199,1) 100%); */
 }
-
 .cipher-container{
     display: flex;
     justify-content: center;
