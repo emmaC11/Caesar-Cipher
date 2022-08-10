@@ -39,10 +39,14 @@ body{
 }
 
 /* home page - body content */
+
+.user-options{
+    margin: 2rem
+}
 .choice-buttons{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     padding-top: 4rem;
 }
