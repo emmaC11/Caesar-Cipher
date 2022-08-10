@@ -145,6 +145,10 @@ body{
     padding: 3rem 2rem;
 }
 
+#e-text{
+    border: 2px solid var(--purple);
+}
+
 @media only screen and (max-width: 525px) {
     .cipher-content{
         height: 105rem;
