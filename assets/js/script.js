@@ -1,6 +1,10 @@
 let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let max_key_length = letters.length
 
+const openModal = document.getElementById('help-modal')
+const closeModal = document.getElementsByClassName('close')
+const modal = document.getElementById('helpModal')
+
 document.addEventListener("DOMContentLoaded",function() 
 {
     
