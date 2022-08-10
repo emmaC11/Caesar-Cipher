@@ -27,6 +27,17 @@ body{
     /* background: rgb(190,131,241);
     background: linear-gradient(90deg, rgba(190,131,241,1) 0%, rgba(190,131,241,1) 35%, rgba(230,128,199,1) 100%); */
 }
+
+/* home page - heading */
+.main-title{
+    width: 100%;
+    background-color: var(--darkpurple);
+    padding: 5.5rem 0 5.5rem 0;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+}
+
 .cipher-container{
     display: flex;
     justify-content: center;
