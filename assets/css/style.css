@@ -38,6 +38,18 @@ body{
     font-size: 3rem;
 }
 
+/* home page - body content */
+.choice-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+.btn{
+   margin: 2rem;
+}
+
 .cipher-container{
     display: flex;
     justify-content: center;
