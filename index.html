@@ -12,55 +12,7 @@
 </head>
 
 <body>
-    <div class="cipher-container">
-        <div class="cipher-content">
-            <header>
-                <h1 class="title">
-                    Caesar Cipher <i class="fa-solid fa-arrows-rotate"></i>
-                </h1>
-            </header>
-        
-            <div class="encrypt-decrypt">
-                <div class="encrypt">
-                    <label for="e-message">Message to encrypt:</label>
-                    <br>
-                    <input class="text-input" type="text" id="e-message" name="e-message" required>
-                    <br>
-                    <label for="e-key">Key Number:</label>
-                    <br>
-                    <input class="text-input" type="text" id="e-key" name="e-key" required>
-                    <br>
-                    <button id="encrypt" onclick="generateMessage()">Encrypt</button>
-
-                    <div class="message encrypted">
-                        <label for="e-text">Encrypted Text:</label>
-                        <br>
-                        <input class="text-input" type="text" id="e-text" name="e-text" readonly>
-                    </div>
-                </div>
-                <div class="decrypt">
-                    <label for="d-message">Message to decrypt:</label>
-                    <br>
-                    <input class="text-input" type="text" id="d-message" name="d-message" required>
-                    <br>
-                    <label for="d-key">Key Number:</label>
-                    <br>
-                    <input class="text-input" type="text" id="d-key" name="d-key" required>
-                    <br>
-                    <button id="decrypt" onclick="decryptMessage()">Decrypt</button>
-
-                    <div class="message decrypted">
-                        <label for="d-text">Decrypted Text:</label>
-                        <br>
-                        <input class="text-input" type="text" id="d-text" name="d-text" readonly>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        
-    </div>
+    
 
 
     <script src="assets/js/script.js"></script>
