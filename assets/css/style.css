@@ -91,6 +91,14 @@ body{
     opacity: 1;
 }
 
+.modal-content{
+    width: 80%;
+    border: 5px solid red;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
 .cipher-container{
     display: flex;
     justify-content: center;
