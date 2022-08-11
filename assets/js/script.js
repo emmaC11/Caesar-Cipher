@@ -51,13 +51,17 @@ let ciphertext = document.getElementById('ciphertext');
 
 
 //ENCRYPT DECRYPT INPUTS
-function getInputs(){
+function getMessage(){
     // get text from input fields
     let message = document.getElementById('message').value;
-    let key = +document.getElementById('key').value;
-
     console.log(message);
+    return message
 
+ }
+
+ function getKey(){
+
+    let key = +document.getElementById('key').value;
     if(key >= 1 && key <= max_key_length)
     {
         console.log("key is returned")
@@ -68,8 +72,6 @@ function getInputs(){
         alert(`The key value must be greater than 0 and less than ${max_key_length}`);
         
     }
-
-    
     console.log(key);
     console.log(typeof key)
  }
