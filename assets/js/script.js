@@ -1,6 +1,7 @@
 let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let max_key_length = letters.length
 
+//home page modals
 const openModal = document.getElementById('help-modal');
 const closeModal = document.getElementsByClassName('close');
 const modal = document.getElementById('helpModal');
@@ -14,25 +15,9 @@ openModal.addEventListener("click", () => {
     modal.classList.remove("show");
   });
 
-document.addEventListener("DOMContentLoaded",function() 
-{
-    
-    console.log(letters);
-    console.log(max_key_length);
 
-    let buttons = document.getElementsByTagName("button");
 
-    for(let button of buttons)
-    {
-        button.addEventListener("click",function()
-        {
-            console.log("the button has been clicked");
-        })
-    }
-
-}
-)
-
+//encrypt decrypt functions
 function getEncryptMessage()
 {
     let eMessage = document.getElementById('e-message').value;
