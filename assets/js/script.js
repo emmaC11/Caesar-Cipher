@@ -49,33 +49,14 @@ let ciphertext = document.getElementById('ciphertext');
     return mode
  }
 
-  function getInputs(){
+
+//ENCRYPT DECRYPT INPUTS
+function getInputs(){
     let message = document.getElementById('message').value;
     let key = document.getElementById('key').value;
 
     console.log(message,key)
  }
-
-//encrypt decrypt functions
-function getEncryptMessage()
-{
-    let eMessage = document.getElementById('e-message').value;
-    return eMessage;
-}
-
-function getEncryptKey()
-{
-    let eKey = document.getElementById('e-key').value;
-    if(eKey >=1 && key <= max_key_length)
-    {
-        return eKey;
-    }
-    else
-    {
-        alert("The key is out of range");
-    }
-   
-}
 
 //variable that stores all letters user can input
 //variable that covers the max key length
