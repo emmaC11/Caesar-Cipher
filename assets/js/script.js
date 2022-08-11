@@ -19,6 +19,7 @@ const modal = document.getElementById('helpModal');
 //ENCRYPT DECRYPT BUTTONS
 const encrypt = document.getElementById('encrypt-btn');
 const decrypt = document.getElementById('decrypt-btn');
+const generateBtn = document.getElementById('encrypt-decrypt');
 
 //ENCRYPT DECRYPT SECTION
 let message = document.getElementById('message').value;
@@ -46,6 +47,13 @@ let ciphertext = document.getElementById('ciphertext');
     let mode = "decrypt";
     console.log(mode);
     return mode
+ }
+
+  function getInputs(){
+    let message = document.getElementById('message').value;
+    let key = document.getElementById('key').value;
+
+    console.log(message,key)
  }
 
 //encrypt decrypt functions
