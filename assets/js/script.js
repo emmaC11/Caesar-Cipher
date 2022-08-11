@@ -16,6 +16,9 @@ openModal.addEventListener("click", () => {
   });
 
 
+//ENCRYPT DECRYPT BUTTONS
+const encrypt = document.getElementById('encrypt-btn');
+const decrypt = document.getElementById('decrypt-btn');
 
 //encrypt decrypt functions
 function getEncryptMessage()
