@@ -57,6 +57,19 @@ function getInputs(){
     let key = +document.getElementById('key').value;
 
     console.log(message);
+
+    if(key >= 1 && key <= max_key_length)
+    {
+        console.log("key is returned")
+        return key
+    }
+    else
+    {
+        alert(`The key value must be greater than 0 and less than ${max_key_length}`);
+        
+    }
+
+    
     console.log(key);
     console.log(typeof key)
  }
