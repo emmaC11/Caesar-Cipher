@@ -6,14 +6,14 @@ const openModal = document.getElementById('help-modal');
 const closeModal = document.getElementsByClassName('close');
 const modal = document.getElementById('helpModal');
 
-openModal.addEventListener("click", () => {
-    modal.classList.add("show");
-  });
+// openModal.addEventListener("click", () => {
+//     modal.classList.add("show");
+//   });
   
   // Close Modal
-  closeModal.addEventListener("click", () => {
-    modal.classList.remove("show");
-  });
+//   closeModal.addEventListener("click", () => {
+//     modal.classList.remove("show");
+//   });
 
 
 //ENCRYPT DECRYPT BUTTONS
@@ -24,6 +24,29 @@ const decrypt = document.getElementById('decrypt-btn');
 let message = document.getElementById('message').value;
 let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
+
+ //encrypt.addEventListener("click", modeDecrypt)
+ encrypt.addEventListener("click", modeEncrypt)
+
+    encrypt.addEventListener('click', () => {
+        console.log("clicked")
+    })
+
+
+ function modeEncrypt()
+ {
+    let mode = "encrypt";
+    console.log(mode);
+    return mode
+    
+ }
+
+ function modeDecrypt()
+ {
+    let mode = "decrypt";
+    console.log(mode);
+    return mode
+ }
 
 //encrypt decrypt functions
 function getEncryptMessage()
