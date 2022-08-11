@@ -54,10 +54,11 @@ let ciphertext = document.getElementById('ciphertext');
 function getInputs(){
     // get text from input fields
     let message = document.getElementById('message').value;
-    let key = document.getElementById('key').value;
+    let key = +document.getElementById('key').value;
 
     console.log(message);
     console.log(key);
+    console.log(typeof key)
  }
 
 //variable that stores all letters user can input
