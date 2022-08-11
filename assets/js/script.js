@@ -20,6 +20,11 @@ openModal.addEventListener("click", () => {
 const encrypt = document.getElementById('encrypt-btn');
 const decrypt = document.getElementById('decrypt-btn');
 
+//ENCRYPT DECRYPT SECTION
+let message = document.getElementById('message').value;
+let key = document.getElementById('key').value;
+let ciphertext = document.getElementById('ciphertext');
+
 //encrypt decrypt functions
 function getEncryptMessage()
 {

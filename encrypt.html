@@ -29,20 +29,20 @@
         
             <div class="encrypt-decrypt">
                 <div class="encrypt">
-                    <label for="e-message">Message to encrypt:</label>
+                    <label for="message">Message to encrypt:</label>
                     <br>
-                    <input class="text-input" type="text" id="e-message" name="e-message" required>
+                    <input class="text-input" type="text" id="message" name="message" required>
                     <br>
-                    <label for="e-key">Key Number:</label>
+                    <label for="key">Key Number:</label>
                     <br>
-                    <input class="text-input" type="text" id="e-key" name="e-key" required>
+                    <input class="text-input" type="text" id="key" name="key" required>
                     <br>
-                    <button id="encrypt" onclick="generateMessage()">Encrypt</button>
+                    <button id="encrypt-decrypt" onclick="generateMessage()">Encrypt</button>
 
                     <div class="message encrypted">
-                        <label for="e-text">Encrypted Text:</label>
+                        <label for="output-text">Encrypted Text:</label>
                         <br>
-                        <input class="text-input" type="text" id="e-text" name="e-text" readonly>
+                        <input class="text-input" type="text" id="cyphertext" name="cyphertext" readonly>
                     </div>
                 </div>
                 <!-- <div class="decrypt">
