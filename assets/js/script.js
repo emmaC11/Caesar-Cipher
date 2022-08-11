@@ -52,10 +52,12 @@ let ciphertext = document.getElementById('ciphertext');
 
 //ENCRYPT DECRYPT INPUTS
 function getInputs(){
+    // get text from input fields
     let message = document.getElementById('message').value;
     let key = document.getElementById('key').value;
 
-    console.log(message,key)
+    console.log(message);
+    console.log(key);
  }
 
 //variable that stores all letters user can input
