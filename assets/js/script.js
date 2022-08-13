@@ -78,7 +78,7 @@ function getMessage(){
     console.log(typeof key)
  }
 
- function encryptMessage(message)
+ function encryptMessage(message,key)
  {
 
    let translated = ""
@@ -96,10 +96,17 @@ function getMessage(){
       {
          translated += letter
       }
+      //SHIFT LETTER BY KEY NUMBER
+      else
+      {
+         letterIndex += key
+         console.log(letterIndex);
+      }
 
       
    }
    console.log(message)
+   console.log(key)
  }
 
 //variable that stores all letters user can input
