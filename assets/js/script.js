@@ -103,8 +103,25 @@ function getMessage(){
          console.log(letterIndex);
       }
 
-      
+      //EXCEPTION HANDLING IF LETTER EXCEEDS LENGHT OF LETTER STRING DUE TO KEY VALUE
+      if (letterIndex >= letters.length)
+      {
+         letterIndex -= letters.length;
+         console.log(letterIndex)
+      }
+      else if(letterIndex < 0)
+      {
+         letterIndex += letters.length
+         console.log(letterIndex)
+      }
+
+      //ADDS THE SHIFTED LETTERS TO THE TRANSLATED VARIABLE
+      translated += letters[letterIndex]
    }
+
+   console.log(translated);
+   return translated;
+
    console.log(message)
    console.log(key)
  }
