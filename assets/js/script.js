@@ -1,5 +1,7 @@
 let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let max_key_length = letters.length
+let shiftedLetters = "";
+
 
 //home page modals
 const openModal = document.getElementById('help-modal');
@@ -74,6 +76,30 @@ function getMessage(){
     }
     console.log(key);
     console.log(typeof key)
+ }
+
+ function encryptMessage(message)
+ {
+
+   let translated = ""
+
+   //LOOP THROUGH EACH CHARACTER OF MESSAGE
+   for (let letter of message)
+   {
+      
+      //GETS INDEX OF LETTER IN LETTERS STRING
+      let letterIndex = letters.indexOf(letter)
+      console.log(letterIndex)
+
+      //IF LETTER IS NOT RECOGNISED IE IS A SYMBOL OR NUMBER STAYS THE SAME
+      if (letterIndex == -1)
+      {
+         translated += letter
+      }
+
+      
+   }
+   console.log(message)
  }
 
 //variable that stores all letters user can input
