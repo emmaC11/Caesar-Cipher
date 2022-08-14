@@ -42,7 +42,9 @@ body{
 /* home page - body content */
 
 .user-options{
-    margin: 2rem
+    margin: 2rem;
+    /* display: none; */
+    display: block;
 }
 
 #prompt{

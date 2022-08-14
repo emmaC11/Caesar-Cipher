@@ -56,6 +56,53 @@
   </div>
 
 
+  <div class="cipher-container">
+    <div class="cipher-content">
+       
+    
+        <div class="encrypt-decrypt">
+            <div class="encrypt">
+                <label for="message">Message to encrypt:</label>
+                <br>
+                <input class="text-input" type="text" id="message" name="message" required>
+                <br>
+                <label for="key">Key Number:</label>
+                <br>
+                <input class="text-input" type="text" id="key" name="key" required>
+                <br>
+                <button id="encrypt-decrypt" onclick="getMessage(); getKey(); encryptMessage(getMessage(),getKey());">Encrypt</button>
+
+                <div class="message encrypted">
+                    <label for="output-text">Encrypted Text:</label>
+                    <br>
+                    <input class="text-input" type="text" id="ciphertext" name="ciphertext" readonly>
+                </div>
+            </div>
+            <!-- <div class="decrypt">
+                <label for="d-message">Message to decrypt:</label>
+                <br>
+                <input class="text-input" type="text" id="d-message" name="d-message" required>
+                <br>
+                <label for="d-key">Key Number:</label>
+                <br>
+                <input class="text-input" type="text" id="d-key" name="d-key" required>
+                <br>
+                <button id="decrypt" onclick="decryptMessage()">Decrypt</button>
+
+                <div class="message decrypted">
+                    <label for="d-text">Decrypted Text:</label>
+                    <br>
+                    <input class="text-input" type="text" id="d-text" name="d-text" readonly>
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+
+    
+</div>
+
+
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/c05c29f2a2.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
