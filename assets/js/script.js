@@ -52,6 +52,23 @@ let ciphertext = document.getElementById('ciphertext');
  }
 
 
+ //HIDE BUTTONS WHEN CLICKED
+ function hideButtons()
+{
+   if(encrypt.style.display === "none" && decrypt.style.display === "none" && openModal.style.display === "none")
+   {
+      encrypt.style.display = "block";
+      decrypt.style.display = "block";
+      openModal.style.display = "block";
+   }
+   else
+   {
+      encrypt.style.display = "none"
+      decrypt.style.display = "none"
+      openModal.style.display = "none"
+   }
+}
+
 //ENCRYPT DECRYPT INPUTS
 function getMessage(){
     // get text from input fields
