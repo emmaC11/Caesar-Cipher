@@ -41,10 +41,10 @@ body{
 
 /* home page - body content */
 
-.user-options{
+#user-options{
     margin: 2rem;
     /* display: none; */
-    display: block;
+    /* display: block; */
 }
 
 #prompt{

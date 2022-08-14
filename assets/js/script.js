@@ -29,6 +29,7 @@ let message = document.getElementById('message').value;
 let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
 const heading = document.getElementById('main-title');
+const introText = document.getElementById('user-options')
 
  //encrypt.addEventListener("click", modeDecrypt)
  encrypt.addEventListener("click", modeEncrypt)
@@ -59,17 +60,19 @@ const heading = document.getElementById('main-title');
  //HIDE BUTTONS WHEN CLICKED
  function hideButtons()
 {
-   if(encrypt.style.display === "none" && decrypt.style.display === "none" && openModal.style.display === "none")
+   if(encrypt.style.display === "none" && decrypt.style.display === "none" && openModal.style.display === "none" && introText.style.display === "none")
    {
       encrypt.style.display = "block";
       decrypt.style.display = "block";
       openModal.style.display = "block";
+      introText.style.display = "block"
    }
    else
    {
       encrypt.style.display = "none"
       decrypt.style.display = "none"
       openModal.style.display = "none"
+      introText.style.display = "none"
    }
 }
 
