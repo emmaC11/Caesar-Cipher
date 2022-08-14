@@ -40,6 +40,11 @@ const introText = document.getElementById('user-options')
         heading.innerText = "Encrypt"
     })
 
+    //DECRYPT BUTTON EVENT LISTENER
+    decrypt.addEventListener('click',() => {
+      console.log("this is the decrypt event listener")
+    })
+
 
  function modeEncrypt()
  {
