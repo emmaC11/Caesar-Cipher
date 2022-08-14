@@ -55,10 +55,7 @@ const encryptDecryptButton = document.getElementById('encrypt-decrypt');
 
     })
 
-    //ENCRYPT DECRYPT BUTTON EVENT LISTENER
-    generateBtn.addEventListener('click', () => {
-      console.log("this is the decrypt event listener");
-    })
+    
 
 
  function modeEncrypt()
@@ -186,6 +183,12 @@ function getMessage(){
    console.log(message)
    console.log(key)
  }
+
+ //ENCRYPT DECRYPT BUTTON EVENT LISTENER
+ generateBtn.addEventListener('click', () => {
+   console.log("this is the decrypt event listener");
+   encryptMessage(getMessage(), getKey());
+ })
 
 //variable that stores all letters user can input
 //variable that covers the max key length
