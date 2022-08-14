@@ -42,7 +42,10 @@ const introText = document.getElementById('user-options')
 
     //DECRYPT BUTTON EVENT LISTENER
     decrypt.addEventListener('click',() => {
-      console.log("this is the decrypt event listener")
+      console.log("this is the decrypt event listener");
+      modeDecrypt();
+      displayCipher();
+      heading.innerText = "Decrypt"
     })
 
 
