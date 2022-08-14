@@ -30,6 +30,8 @@ let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
 const heading = document.getElementById('main-title');
 const introText = document.getElementById('user-options')
+const messageLabel = document.getElementById('messageLabel');
+const outputLabel = document.getElementById('outputLabel');
 
  
    //ENCRYPT BUTTON EVENT LISTENER
