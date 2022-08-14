@@ -8,15 +8,6 @@ const openModal = document.getElementById('help-modal');
 const closeModal = document.getElementsByClassName('close');
 const modal = document.getElementById('helpModal');
 
-// openModal.addEventListener("click", () => {
-//     modal.classList.add("show");
-//   });
-  
-  // Close Modal
-//   closeModal.addEventListener("click", () => {
-//     modal.classList.remove("show");
-//   });
-
 
 //ENCRYPT DECRYPT BUTTONS
 const encrypt = document.getElementById('encrypt-btn');
@@ -34,58 +25,30 @@ const messageLabel = document.getElementById('messageLabel');
 const outputLabel = document.getElementById('outputLabel');
 const encryptDecryptButton = document.getElementById('encrypt-decrypt');
 
- 
-   //ENCRYPT BUTTON EVENT LISTENER
-    encrypt.addEventListener('click', () => {
-        console.log("this is the encrypt event listerner")
-        modeEncrypt();
-        displayCipher();
-        heading.innerText = "Encrypt"
-    })
 
-    //DECRYPT BUTTON EVENT LISTENER
-    decrypt.addEventListener('click',() => {
-      console.log("this is the decrypt event listener");
-      modeDecrypt();
-      displayCipher();
-      heading.innerText = "Decrypt";
-      messageLabel.innerText = "Message to decrypt:";
-      encryptDecryptButton.innerText = "Decrypt"
-      outputLabel.innerText = "Decrypted Text:"
+//CAPTURES MODE - ENCRYPT OR DECRYPT
+function modeEncrypt() {
+   let mode = "encrypt";
+   console.log(mode);
+   return mode
 
-    })
+}
 
-    
+function modeDecrypt() {
+   let mode = "decrypt";
+   console.log(mode);
+   return mode
+}
 
 
- function modeEncrypt()
- {
-    let mode = "encrypt";
-    console.log(mode);
-    return mode
-    
- }
-
- function modeDecrypt()
- {
-    let mode = "decrypt";
-    console.log(mode);
-    return mode
- }
-
-
- //HIDE BUTTONS WHEN CLICKED
- function hideButtons()
-{
-   if(encrypt.style.display === "none" && decrypt.style.display === "none" && openModal.style.display === "none" && introText.style.display === "none")
-   {
+//HIDE BUTTONS WHEN CLICKED
+function hideButtons() {
+   if (encrypt.style.display === "none" && decrypt.style.display === "none" && openModal.style.display === "none" && introText.style.display === "none") {
       encrypt.style.display = "block";
       decrypt.style.display = "block";
       openModal.style.display = "block";
       introText.style.display = "block"
-   }
-   else
-   {
+   } else {
       encrypt.style.display = "none"
       decrypt.style.display = "none"
       openModal.style.display = "none"
@@ -93,81 +56,70 @@ const encryptDecryptButton = document.getElementById('encrypt-decrypt');
    }
 }
 
-function displayCipher()
-{
-   if(cipherContent.style.display === "none")
-   {
+//DISPLAYS CAESAR CIPHER
+function displayCipher() {
+   if (cipherContent.style.display === "none") {
       cipherContent.style.display = "flex";
       console.log("this is the if")
-   }
-   
-   else
-   {
+   } else {
       cipherContent.style.display = "none";
       console.log("this is the else")
    }
 
 }
 
-//ENCRYPT DECRYPT INPUTS
-function getMessage(){
-    // get text from input fields
-    let message = document.getElementById('message').value;
-    console.log(message);
-    return message
+//GET MESSAGE FROM INPUT FIELD
+function getMessage() {
+   // get text from input fields
+   let message = document.getElementById('message').value;
+   console.log(message);
+   return message
 
- }
+}
 
- function getKey(){
+//GET KEY FROM INPUT FIELD
+function getKey() {
 
-    let key = +document.getElementById('key').value;
-    if(key >= 1 && key <= max_key_length)
-    {
-        console.log("key is returned")
-        return key
-    }
-    else
-    {
-        alert(`The key value must be greater than 0 and less than ${max_key_length}`);
-        
-    }
-    console.log(key);
-    console.log(typeof key)
- }
+   let key = +document.getElementById('key').value;
+   if (key >= 1 && key <= max_key_length) {
+      console.log("key is returned")
+      return key
+   } else {
+      alert(`The key value must be greater than 0 and less than ${max_key_length}`);
 
- function encryptMessage(message,key)
- {
+   }
+   console.log(key);
+   console.log(typeof key)
+}
+
+
+//ENCRYPT/DECRYPT MESSAGE
+function encryptMessage(message, key) {
 
    let translated = ""
 
    //LOOP THROUGH EACH CHARACTER OF MESSAGE
-   for (let letter of message)
-   {
-      
+   for (let letter of message) {
+
       //GETS INDEX OF LETTER IN LETTERS STRING
       let letterIndex = letters.indexOf(letter)
       console.log(letterIndex)
 
       //IF LETTER IS NOT RECOGNISED IE IS A SYMBOL OR NUMBER STAYS THE SAME
-      if (letterIndex == -1)
-      {
+      if (letterIndex == -1) {
          translated += letter
       }
       //SHIFT LETTER BY KEY NUMBER
-      else
-      {
+      else {
          letterIndex += key
          console.log(letterIndex);
       }
 
       //EXCEPTION HANDLING IF LETTER EXCEEDS LENGHT OF LETTER STRING DUE TO KEY VALUE
-      if (letterIndex >= letters.length)
-      {
+      if (letterIndex >= letters.length) {
          letterIndex -= letters.length;
          console.log(letterIndex)
-      }
-      else if(letterIndex < 0)
-      {
+      } else if (letterIndex < 0) {
          letterIndex += letters.length
          console.log(letterIndex)
       }
@@ -182,20 +134,30 @@ function getMessage(){
 
    console.log(message)
    console.log(key)
- }
+}
 
- //ENCRYPT DECRYPT BUTTON EVENT LISTENER
- generateBtn.addEventListener('click', () => {
+//ENCRYPT BUTTON EVENT LISTENER
+encrypt.addEventListener('click', () => {
+   console.log("this is the encrypt event listerner")
+   modeEncrypt();
+   displayCipher();
+   heading.innerText = "Encrypt"
+})
+
+//DECRYPT BUTTON EVENT LISTENER
+decrypt.addEventListener('click', () => {
+   console.log("this is the decrypt event listener");
+   modeDecrypt();
+   displayCipher();
+   heading.innerText = "Decrypt";
+   messageLabel.innerText = "Message to decrypt:";
+   encryptDecryptButton.innerText = "Decrypt"
+   outputLabel.innerText = "Decrypted Text:"
+
+})
+
+//ENCRYPT DECRYPT BUTTON EVENT LISTENER
+generateBtn.addEventListener('click', () => {
    console.log("this is the decrypt event listener");
    encryptMessage(getMessage(), getKey());
- })
-
-//variable that stores all letters user can input
-//variable that covers the max key length
-// get encrypt input
-// get encrypt key
-// get decrypt input
-// get decrypt key
-// encryptMessage
-// decryptMessage
-
+})
