@@ -55,6 +55,10 @@ const encryptDecryptButton = document.getElementById('encrypt-decrypt');
 
     })
 
+    //ENCRYPT DECRYPT BUTTON EVENT LISTENER
+    generateBtn.addEventListener('click', () => {
+      console.log("this is the decrypt event listener");
+    })
 
 
  function modeEncrypt()
