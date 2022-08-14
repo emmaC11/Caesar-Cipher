@@ -24,6 +24,7 @@ const decrypt = document.getElementById('decrypt-btn');
 const generateBtn = document.getElementById('encrypt-decrypt');
 
 //ENCRYPT DECRYPT SECTION
+const cipherContent = document.getElementById('cipher-container');
 let message = document.getElementById('message').value;
 let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
@@ -32,7 +33,8 @@ let ciphertext = document.getElementById('ciphertext');
  encrypt.addEventListener("click", modeEncrypt)
 
     encrypt.addEventListener('click', () => {
-        console.log("clicked")
+        console.log("this is the encrypt event listerner")
+        displayCipher();
     })
 
 
@@ -67,6 +69,22 @@ let ciphertext = document.getElementById('ciphertext');
       decrypt.style.display = "none"
       openModal.style.display = "none"
    }
+}
+
+function displayCipher()
+{
+   if(cipherContent.style.display === "none")
+   {
+      cipherContent.style.display = "flex";
+      console.log("this is the if")
+   }
+   
+   else
+   {
+      cipherContent.style.display = "none";
+      console.log("this is the else")
+   }
+
 }
 
 //ENCRYPT DECRYPT INPUTS
