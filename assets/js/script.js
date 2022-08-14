@@ -56,6 +56,7 @@ const encryptDecryptButton = document.getElementById('encrypt-decrypt');
     })
 
 
+
  function modeEncrypt()
  {
     let mode = "encrypt";
@@ -175,6 +176,7 @@ function getMessage(){
    }
 
    console.log(translated);
+   ciphertext.textContent = translated;
    return translated;
 
    console.log(message)
