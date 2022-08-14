@@ -31,11 +31,11 @@ let ciphertext = document.getElementById('ciphertext');
 const heading = document.getElementById('main-title');
 const introText = document.getElementById('user-options')
 
- //encrypt.addEventListener("click", modeDecrypt)
- encrypt.addEventListener("click", modeEncrypt)
-
+ 
+   //ENCRYPT BUTTON EVENT LISTENER
     encrypt.addEventListener('click', () => {
         console.log("this is the encrypt event listerner")
+        modeEncrypt();
         displayCipher();
         heading.innerText = "Encrypt"
     })
