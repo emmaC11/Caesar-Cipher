@@ -28,6 +28,7 @@ const cipherContent = document.getElementById('cipher-container');
 let message = document.getElementById('message').value;
 let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
+const heading = document.getElementById('main-title');
 
  //encrypt.addEventListener("click", modeDecrypt)
  encrypt.addEventListener("click", modeEncrypt)
@@ -35,6 +36,7 @@ let ciphertext = document.getElementById('ciphertext');
     encrypt.addEventListener('click', () => {
         console.log("this is the encrypt event listerner")
         displayCipher();
+        heading.innerText = "Encrypt"
     })
 
 
