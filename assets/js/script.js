@@ -32,6 +32,7 @@ const heading = document.getElementById('main-title');
 const introText = document.getElementById('user-options')
 const messageLabel = document.getElementById('messageLabel');
 const outputLabel = document.getElementById('outputLabel');
+const encryptDecryptButton = document.getElementById('encrypt-decrypt');
 
  
    //ENCRYPT BUTTON EVENT LISTENER
@@ -47,7 +48,11 @@ const outputLabel = document.getElementById('outputLabel');
       console.log("this is the decrypt event listener");
       modeDecrypt();
       displayCipher();
-      heading.innerText = "Decrypt"
+      heading.innerText = "Decrypt";
+      messageLabel.innerText = "Message to decrypt:";
+      encryptDecryptButton.innerText = "Decrypt"
+      outputLabel.innerText = "Decrypted Text:"
+
     })
 
 

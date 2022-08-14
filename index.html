@@ -62,7 +62,7 @@
     
         <div class="encrypt-decrypt">
             <div class="encrypt">
-                <label for="message">Message to encrypt:</label>
+                <label for="message" id="messageLabel">Message to encrypt:</label>
                 <br>
                 <input class="text-input" type="text" id="message" name="message" required>
                 <br>
@@ -73,7 +73,7 @@
                 <button id="encrypt-decrypt" onclick="getMessage(); getKey(); encryptMessage(getMessage(),getKey());">Encrypt</button>
 
                 <div class="message encrypted">
-                    <label for="output-text">Encrypted Text:</label>
+                    <label for="output-text" id="outputLabel">Encrypted Text:</label>
                     <br>
                     <input class="text-input" type="text" id="ciphertext" name="ciphertext" readonly>
                 </div>
