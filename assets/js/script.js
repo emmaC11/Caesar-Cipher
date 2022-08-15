@@ -24,6 +24,7 @@ const introText = document.getElementById('user-options')
 const messageLabel = document.getElementById('messageLabel');
 const outputLabel = document.getElementById('outputLabel');
 const encryptDecryptButton = document.getElementById('encrypt-decrypt');
+const returnArrow = document.getElementById('return');
 
 let cipherMode = ""
 
@@ -191,6 +192,9 @@ encrypt.addEventListener('click', () => {
    else{
       console.log("the heading is not encrypt")
    }
+
+   //DISPLAY RETURN ARROW WHEN CLICKED
+   returnArrow.style.display = "block";
 })
 
 //DECRYPT BUTTON EVENT LISTENER
@@ -202,6 +206,9 @@ decrypt.addEventListener('click', () => {
    messageLabel.innerText = "Message to decrypt:";
    encryptDecryptButton.innerText = "Decrypt"
    outputLabel.innerText = "Decrypted Text:"
+
+   //DISPLAY RETURN ARROW WHEN CLICKED
+   returnArrow.style.display = "block";
 
 })
 
@@ -218,7 +225,9 @@ generateBtn.addEventListener('click', () => {
    }
 
    //DISPLAY LABEL WHEN BUTTON IS CLICKED
-   outputLabel.style.display = "block"
+   outputLabel.style.display = "block";
+
+  
    
    
 })
