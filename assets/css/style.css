@@ -174,6 +174,10 @@ body{
     border: 2px solid var(--purple);
 }
 
+#outputLabel{
+    display: none;
+}
+
 @media only screen and (max-width: 525px) {
     .cipher-content{
         height: 105rem;

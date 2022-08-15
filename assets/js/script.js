@@ -216,6 +216,9 @@ generateBtn.addEventListener('click', () => {
    else {
       decryptMessage(getMessage(), getKey());
    }
+
+   //DISPLAY LABEL WHEN BUTTON IS CLICKED
+   outputLabel.style.display = "block"
    
    
 })
