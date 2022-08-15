@@ -178,9 +178,9 @@ body{
     display: none;
 }
 
-#return{
+.return{
     font-size: 3rem;
-    margin: 2rem;
+    margin-left: 2rem;
     color: var(--blue);
     display: none;
 }
