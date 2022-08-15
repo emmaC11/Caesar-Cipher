@@ -231,7 +231,3 @@ generateBtn.addEventListener('click', () => {
    
    
 })
-
-returnArrow.addEventListener('click', () => {
-   console.log("this is the return arrow event listener");
-})
