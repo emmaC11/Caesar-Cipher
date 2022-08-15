@@ -136,6 +136,46 @@ function encryptMessage(message, key) {
    console.log(key)
 }
 
+function decryptMessage(message,key)
+{
+   let translated = ""
+   key = -key
+
+   for (let letter of message) {
+
+      //GETS INDEX OF LETTER IN LETTERS STRING
+      let letterIndex = letters.indexOf(letter)
+      console.log(letterIndex)
+
+      //IF LETTER IS NOT RECOGNISED IE IS A SYMBOL OR NUMBER STAYS THE SAME
+      if (letterIndex == -1) {
+         translated += letter
+      }
+      //SHIFT LETTER BY KEY NUMBER
+      else {
+         letterIndex += key
+         console.log(letterIndex);
+      }
+
+      //EXCEPTION HANDLING IF LETTER EXCEEDS LENGHT OF LETTER STRING DUE TO KEY VALUE
+      if (letterIndex >= letters.length) {
+         letterIndex -= letters.length;
+         console.log(letterIndex)
+      } else if (letterIndex < 0) {
+         letterIndex += letters.length
+         console.log(letterIndex)
+      }
+
+      //ADDS THE SHIFTED LETTERS TO THE TRANSLATED VARIABLE
+      translated += letters[letterIndex]
+   }
+
+   console.log(translated);
+   ciphertext.textContent = translated;
+   return translated;
+
+}
+
 //ENCRYPT BUTTON EVENT LISTENER
 encrypt.addEventListener('click', () => {
    console.log("this is the encrypt event listerner")
