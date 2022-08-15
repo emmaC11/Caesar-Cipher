@@ -25,6 +25,8 @@ const messageLabel = document.getElementById('messageLabel');
 const outputLabel = document.getElementById('outputLabel');
 const encryptDecryptButton = document.getElementById('encrypt-decrypt');
 
+let cipherMode = ""
+
 
 //CAPTURES MODE - ENCRYPT OR DECRYPT
 function modeEncrypt() {
@@ -182,6 +184,13 @@ encrypt.addEventListener('click', () => {
    modeEncrypt();
    displayCipher();
    heading.innerText = "Encrypt"
+   if(heading.innerText === "Encrypt")
+   {
+      cipherMode = "encrypt"
+   }
+   else{
+      console.log("the heading is not encrypt")
+   }
 })
 
 //DECRYPT BUTTON EVENT LISTENER
@@ -199,5 +208,14 @@ decrypt.addEventListener('click', () => {
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
 generateBtn.addEventListener('click', () => {
    console.log("this is the decrypt event listener");
-   encryptMessage(getMessage(), getKey());
+   console.log(`the cipher mode is ${cipherMode}`)
+   if(cipherMode === "encrypt")
+   {
+      encryptMessage(getMessage(), getKey());
+   }
+   else {
+      decryptMessage(getMessage(), getKey());
+   }
+   
+   
 })
