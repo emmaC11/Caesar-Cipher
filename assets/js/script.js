@@ -5,7 +5,7 @@ let shiftedLetters = "";
 
 //home page modals
 const openModal = document.getElementById('help-modal');
-const closeModal = document.getElementsByClassName('close');
+const closeModal = document.getElementById('close');
 const modal = document.getElementById('helpModal');
 
 
@@ -58,6 +58,11 @@ function hideButtons() {
       introText.style.display = "none"
    }
 }
+
+//MODALS
+openModal.addEventListener("click", () => {
+   modal.classList.add("show")
+})
 
 //DISPLAYS CAESAR CIPHER
 function displayCipher() {
