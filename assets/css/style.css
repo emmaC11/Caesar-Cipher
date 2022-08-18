@@ -157,6 +157,14 @@ body{
     color: var(--blue);
     display: none;
 }
+
+.return-home{
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: var(--blue); 
+}
+
+
 @media only screen and (max-width: 525px) {
     .cipher-content{
         height: 105rem;

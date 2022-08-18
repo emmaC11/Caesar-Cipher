@@ -13,59 +13,23 @@
 
 <body>
     <header>
-        <h1 class="main-title" id="type">Encrypt <lord-icon
+        <h1 class="title" id="main-title">Caesar-Cipher <lord-icon
             src="https://cdn.lordicon.com/huwchbks.json"
             trigger="loop"
             delay="2000"
             colors="primary:#ffffff,secondary:#be83f1"
             style="width:60px;height:60px">
             </lord-icon></h1>
+            <a class="return-home" href="index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
         
     </header>
-    <div class="cipher-container">
-        <div class="cipher-content">
-           
-        
-            <div class="encrypt-decrypt">
-                <div class="encrypt">
-                    <label for="message">Message to encrypt:</label>
-                    <br>
-                    <input class="text-input" type="text" id="message" name="message" required>
-                    <br>
-                    <label for="key">Key Number:</label>
-                    <br>
-                    <input class="text-input" type="text" id="key" name="key" required>
-                    <br>
-                    <button id="encrypt-decrypt" onclick="getMessage(); getKey(); encryptMessage(getMessage(),getKey());">Encrypt</button>
-
-                    <div class="message encrypted">
-                        <label for="output-text">Encrypted Text:</label>
-                        <br>
-                        <input class="text-input" type="text" id="ciphertext" name="ciphertext" readonly>
-                    </div>
-                </div>
-                <!-- <div class="decrypt">
-                    <label for="d-message">Message to decrypt:</label>
-                    <br>
-                    <input class="text-input" type="text" id="d-message" name="d-message" required>
-                    <br>
-                    <label for="d-key">Key Number:</label>
-                    <br>
-                    <input class="text-input" type="text" id="d-key" name="d-key" required>
-                    <br>
-                    <button id="decrypt" onclick="decryptMessage()">Decrypt</button>
-
-                    <div class="message decrypted">
-                        <label for="d-text">Decrypted Text:</label>
-                        <br>
-                        <input class="text-input" type="text" id="d-text" name="d-text" readonly>
-                    </div>
-
-                </div> -->
-            </div>
-        </div>
-
-        
+    <div class="help-container">
+        <h2>How to use a Caesar Cipher</h2>
+        <p>A caesar cipher converts plain text into in an encoded message - this is known as encrypting</p>
+        <p>The plain text is encrypted into ciphertext. The ciphertext looks like a combination of random letters</p>
+        <p>The original text cannot be identified by reading the cyphertext</p>
+        <p>The key is the number of times you want to shift the letters.</p>
+        <p>Ciphertext can only be decrypted if you know the key.</p>
     </div>
 
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
