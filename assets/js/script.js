@@ -3,10 +3,6 @@ let max_key_length = letters.length
 let shiftedLetters = "";
 
 
-//home page modals
-const openModal = document.getElementById('help-modal');
-const closeModal = document.getElementById('closeModal');
-const modal = document.getElementById('helpModal');
 
 
 //ENCRYPT DECRYPT BUTTONS
@@ -46,29 +42,17 @@ function modeDecrypt() {
 
 //HIDE BUTTONS WHEN CLICKED
 function hideButtons() {
-   if (encrypt.style.display === "none" && decrypt.style.display === "none" && openModal.style.display === "none" && introText.style.display === "none") {
+   if (encrypt.style.display === "none" && decrypt.style.display === "none"  && introText.style.display === "none") {
       encrypt.style.display = "block";
       decrypt.style.display = "block";
-      openModal.style.display = "block";
       introText.style.display = "block"
    } else {
       encrypt.style.display = "none"
       decrypt.style.display = "none"
-      openModal.style.display = "none"
       introText.style.display = "none"
    }
 }
 
-//MODALS
-openModal.addEventListener("click", () => {
-  console.log("this is the open modal button event handler")
-})
-
-closeModal.addEventListener("click", test())
-
-function test(){
-   console.log("ths is the modal test")
-}
 
 //DISPLAYS CAESAR CIPHER
 function displayCipher() {
