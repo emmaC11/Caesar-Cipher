@@ -158,10 +158,23 @@ body{
     display: none;
 }
 
+/* HELP SCREEN */
 .return-home{
     font-size: 3rem;
     margin-left: 2rem;
     color: var(--blue); 
+}
+
+.help-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.help-title{
+    margin-bottom: 2rem;
 }
 
 
