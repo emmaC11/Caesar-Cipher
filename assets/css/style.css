@@ -173,6 +173,9 @@ body{
     line-height: 4rem;
 }
 
+.help-content{
+    margin: 5rem;
+}
 .help-title{
     margin-bottom: 2rem;
 }
