@@ -55,6 +55,16 @@ body{
     font-size: 1.8rem;
 }
 
+#typetext{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: var(--blue);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* position: fixed; */
+}
+
 .choice-buttons{
     display: flex;
     flex-wrap: wrap;

@@ -25,24 +25,27 @@ let cipherMode = ""
 
 //HELP PAGE TYPEWRITER EFFECTS
 const typeText = document.getElementById('typetext');
-const helpPhrases = ['All helping hand', 'We are here to help']; 
-let currentPhrase = [];
+const helpPhrases = ['Click button below', 'Click! Click!', 'Click Now!']; 
+
 //item in array
 let i = 0
 //letter
 let x = 0
+let currentPhrase = [];
 
 //LTYPEWRITER FUNCTION
 function typewriter() {
    //LOOP THROUGH PHRASES ARRAY
-  
+   typeText.innerText = currentPhrase.join('');
    //loop through items in phrases array
    if(i < helpPhrases.length){
-      console.log(helpPhrases[i]);
+      // console.log(helpPhrases[i]);
 
       //[i] is first item in array
-      if(x < helpPhrases[i].length){
-         console.log(helpPhrases[i][x]);
+      if(x <= helpPhrases[i].length){
+         currentPhrase.push(helpPhrases[i][x])
+         // console.log(helpPhrases[i][x]);
+         // console.log(currentPhrase);
          x++;
       }
 
@@ -53,7 +56,7 @@ function typewriter() {
          i++;
       }
    }
-
+   
     setTimeout(typewriter,500)
 }
 
