@@ -32,6 +32,7 @@ let i = 0
 //letter
 let x = 0
 let currentPhrase = [];
+let isDeletingLetter = false
 
 //LTYPEWRITER FUNCTION
 function typewriter() {
@@ -42,19 +43,28 @@ function typewriter() {
       // console.log(helpPhrases[i]);
 
       //[i] is first item in array
-      if(x <= helpPhrases[i].length){
+      if(!isDeletingLetter && x <= helpPhrases[i].length){
          currentPhrase.push(helpPhrases[i][x])
          // console.log(helpPhrases[i][x]);
          // console.log(currentPhrase);
          x++;
       }
 
+      //if reach end of phrase, need to delete letters 
+      if(isDeletingLetter && x <= helpPhrases[i].length){
+         currentPhrase.pop(helpPhrases[i][x])
+         x--;
+      }
+
       //MOVE ONTO SECOND ITEM IN ARRAY
 
       // if x is equal to the length of the first phrase, increment to move to next item in array
       if(x == helpPhrases[i].length){
-         i++;
+         //need to delete existing phrase before moving onto next
+         isDeletingLetter = true;
       }
+
+      
    }
    
     setTimeout(typewriter,500)
