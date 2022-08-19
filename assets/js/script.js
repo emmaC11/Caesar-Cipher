@@ -25,18 +25,26 @@ let cipherMode = ""
 
 //HELP PAGE TYPEWRITER EFFECTS
 const typeText = document.getElementById('typetext');
-const helpPhrases = ['A helping hand', 'We are here to help'];
+const helpPhrases = ['A helping hand', 'We are here to help']; 
 let currentPhrase = [];
 
 //LTYPEWRITER FUNCTION
 function typewriter() {
    //LOOP THROUGH PHRASES ARRAY
    let i = 0
+   let x = 0
    //loop through items in phrases array
    if(i < helpPhrases.length){
-      console.log(helpPhrases[i]);
+      console.log(helpPhrases[i])
+
+      //[i] is first item in array
+      if(x < helpPhrases[i].length){
+         console.log(helpPhrases[i][x]);
+      }
    }
 }
+
+typewriter();
 
 
 //CAPTURES MODE - ENCRYPT OR DECRYPT
