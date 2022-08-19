@@ -21,8 +21,12 @@ const messageLabel = document.getElementById('messageLabel');
 const outputLabel = document.getElementById('outputLabel');
 const encryptDecryptButton = document.getElementById('encrypt-decrypt');
 const returnArrow = document.getElementById('return');
-
 let cipherMode = ""
+
+//HELP PAGE TYPEWRITER EFFECTS
+const typeText = document.getElementById('typetext');
+const helpPhrase = ['A helping hand', 'We are here to help'];
+let currentPhrase = [];
 
 
 //CAPTURES MODE - ENCRYPT OR DECRYPT
