@@ -74,10 +74,16 @@ function typewriter() {
 
       
    }
-   
-    setTimeout(typewriter,500)
-}
 
+   if(isDeletingLetter)
+   {
+      setTimeout(typewriter,150)
+   }
+   else{
+      setTimeout(typewriter,200)
+   }
+    
+}
 typewriter();
 
 
