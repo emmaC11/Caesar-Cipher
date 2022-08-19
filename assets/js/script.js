@@ -64,6 +64,13 @@ function typewriter() {
          isDeletingLetter = true;
       }
 
+      //when all letters are removed, move onto next item in array, now adding letters
+      if(isDeletingLetter && x === 0){
+         currentPhrase = []
+         isDeletingLetter = false
+         i++
+      }
+
       
    }
    
