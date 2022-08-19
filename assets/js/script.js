@@ -27,7 +27,9 @@ let cipherMode = ""
 const typeText = document.getElementById('typetext');
 const helpPhrases = ['All helping hand', 'We are here to help']; 
 let currentPhrase = [];
+//item in array
 let i = 0
+//letter
 let x = 0
 
 //LTYPEWRITER FUNCTION
@@ -43,9 +45,16 @@ function typewriter() {
          console.log(helpPhrases[i][x]);
          x++;
       }
+
+      //MOVE ONTO SECOND ITEM IN ARRAY
+
+      // if x is equal to the length of the first phrase, increment to move to next item in array
+      if(x == helpPhrases[i].length){
+         i++;
+      }
    }
 
-    setTimeout(typewriter(),500)
+    setTimeout(typewriter,500)
 }
 
 typewriter();
