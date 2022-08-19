@@ -38,15 +38,13 @@ let isDeletingLetter = false
 function typewriter() {
    //LOOP THROUGH PHRASES ARRAY
    typeText.innerText = currentPhrase.join('');
+
    //loop through items in phrases array
    if(i < helpPhrases.length){
-      // console.log(helpPhrases[i]);
 
-      //[i] is first item in array
+      //push letters to currentPhrase array
       if(!isDeletingLetter && x <= helpPhrases[i].length){
          currentPhrase.push(helpPhrases[i][x])
-         // console.log(helpPhrases[i][x]);
-         // console.log(currentPhrase);
          x++;
       }
 
@@ -55,8 +53,6 @@ function typewriter() {
          currentPhrase.pop(helpPhrases[i][x])
          x--;
       }
-
-      //MOVE ONTO SECOND ITEM IN ARRAY
 
       // if x is equal to the length of the first phrase, increment to move to next item in array
       if(x == helpPhrases[i].length){
@@ -69,6 +65,11 @@ function typewriter() {
          currentPhrase = []
          isDeletingLetter = false
          i++
+
+         //if reach end of array, reset back to 0
+         if(i === helpPhrases.length){
+            i = 0
+         }
       }
 
       
