@@ -205,9 +205,9 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-image: url('../images/layered-waves-haikei (2).png');
+    background-image: url('../images/layered-waves-haikei (2).svg');
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size: cover;
     z-index: -2;
 }
 
