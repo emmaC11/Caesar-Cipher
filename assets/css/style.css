@@ -208,6 +208,9 @@ body{
 PAGE LOADER */
 .spinner{
     border-radius: 50%;
+    border: 10px solid transparent;
+    border-top: 10px solid var(--darkpurple);
+    border-bottom: 10px solid var(--darkpurple);
 }
 
 
