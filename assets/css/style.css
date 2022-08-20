@@ -197,6 +197,17 @@ body{
 }
 
 
+/* FOOTER */
+footer{
+    height: 100%;
+    margin-top: 5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
 @media only screen and (max-width: 525px) {
     .cipher-content{
         height: 105rem;
