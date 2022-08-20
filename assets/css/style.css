@@ -211,6 +211,8 @@ PAGE LOADER */
     border: 10px solid transparent;
     border-top: 10px solid var(--darkpurple);
     border-bottom: 10px solid var(--darkpurple);
+    width: 10rem;
+    height: 10rem;
 }
 
 
