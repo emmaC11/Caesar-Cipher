@@ -23,6 +23,9 @@ const encryptDecryptButton = document.getElementById('encrypt-decrypt');
 const returnArrow = document.getElementById('return');
 let cipherMode = ""
 
+//footer
+const footer = document.querySelector('footer');
+
 //HELP PAGE TYPEWRITER EFFECTS
 const typeText = document.getElementById('typetext');
 const helpPhrases = ['Click button below', 'Click! Click!', 'Click Now!']; 
@@ -252,6 +255,7 @@ encrypt.addEventListener('click', () => {
 
    //DISPLAY RETURN ARROW WHEN CLICKED
    returnArrow.style.display = "block";
+   footer.style.backgroundImage = "none"
 })
 
 //DECRYPT BUTTON EVENT LISTENER
@@ -266,6 +270,7 @@ decrypt.addEventListener('click', () => {
 
    //DISPLAY RETURN ARROW WHEN CLICKED
    returnArrow.style.display = "block";
+   footer.style.backgroundImage = "none"
 
 })
 
