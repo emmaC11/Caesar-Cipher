@@ -83,7 +83,12 @@ body{
    color: #fff;
    font-size: 1.5rem;
    cursor: pointer;
+   transition: 1s;
    
+}
+
+.btn:hover{
+    background-color: var(--pink);
 }
 
 #cipher-container{
