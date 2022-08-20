@@ -62,7 +62,9 @@ body{
     color: var(--blue);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /* position: fixed; */
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .choice-buttons{
@@ -84,6 +86,7 @@ body{
    font-size: 1.5rem;
    cursor: pointer;
    transition: 1s;
+   /* position: absolute; */
    
 }
 
