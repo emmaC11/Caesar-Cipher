@@ -204,6 +204,12 @@ body{
     margin-bottom: 2rem;
 }
 
+/* 
+PAGE LOADER */
+.spinner{
+    border-radius: 50%;
+}
+
 
 /* FOOTER */
 footer{
