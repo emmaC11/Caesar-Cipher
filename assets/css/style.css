@@ -208,6 +208,7 @@ footer{
     background-image: url('../images/layered-waves-haikei (2).png');
     background-repeat: no-repeat;
     background-size:cover ;
+    z-index: -2;
 }
 
 
