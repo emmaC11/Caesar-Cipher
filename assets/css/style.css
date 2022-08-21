@@ -213,6 +213,8 @@ PAGE LOADER */
     border-bottom: 10px solid var(--darkpurple);
     width: 10rem;
     height: 10rem;
+    margin: 0 auto;
+    margin-top: 5rem;
     display: none;
 
     animation: spinner 1.5s infinite;
