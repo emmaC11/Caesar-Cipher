@@ -165,6 +165,20 @@ body{
     border: 2px solid var(--purple);
 }
 
+#ciphertext{
+    font-size: 3rem;
+}
+
+#outputLabel{
+    font-size: 2rem;
+}
+
+#output{
+    display: none;
+    margin-top: 7rem;
+    border: 2px solid var(--lightgrey);
+    border-radius: 2rem;
+}
 
 .return{
     font-size: 3rem;
@@ -230,9 +244,7 @@ PAGE LOADER */
     100% { transform: rotate(360deg); }
   }
 
-  #output{
-    display: none;
-}
+
 
 /* FOOTER */
 footer{
