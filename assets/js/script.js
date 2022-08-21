@@ -287,6 +287,7 @@ function displayOutput() {
 
 function loadEffect(){
    timeout = setInterval(displayOutput, 3000);
+   spinner.style.display = "block"
 }
 
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
@@ -300,6 +301,7 @@ generateBtn.addEventListener('click', () => {
    else {
       decryptMessage(getMessage(), getKey());
    }
+   loadEffect();
 
    //DISPLAY LABEL WHEN BUTTON IS CLICKED
    // outputLabel.style.display = "block"
