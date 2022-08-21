@@ -178,7 +178,14 @@ body{
     margin-top: 7rem;
     border: 2px solid var(--lightgrey);
     border-radius: 2rem;
+    animation: fade 2s;
 }
+
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .return{
     font-size: 3rem;
