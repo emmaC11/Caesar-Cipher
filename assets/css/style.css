@@ -213,9 +213,11 @@ PAGE LOADER */
     border-bottom: 10px solid var(--darkpurple);
     width: 10rem;
     height: 10rem;
+    display: none;
 
     animation: spinner 1.5s infinite;
     -webkit-animation: spinner 1.5s linear infinite; 
+
 }
 
 /* source from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader */
@@ -229,6 +231,9 @@ PAGE LOADER */
     100% { transform: rotate(360deg); }
   }
 
+  #output{
+    display: none;
+}
 
 /* FOOTER */
 footer{

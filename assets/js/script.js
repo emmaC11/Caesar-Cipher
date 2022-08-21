@@ -274,6 +274,14 @@ decrypt.addEventListener('click', () => {
 
 })
 
+
+//STORE CIPHERTEXT OUTPUT IN VARIABLE & DISPLAY CHANGES IN FUNCTION
+let ciphertextoutput = document.getElementById('output');
+function displayOutput() {
+   ciphertextoutput.style.display = "block"
+   spinner.style.display = "none"
+}
+
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
 generateBtn.addEventListener('click', () => {
    console.log("this is the decrypt event listener");
@@ -287,9 +295,23 @@ generateBtn.addEventListener('click', () => {
    }
 
    //DISPLAY LABEL WHEN BUTTON IS CLICKED
-   outputLabel.style.display = "block";
+   // outputLabel.style.display = "block"
 
   
    
    
 })
+
+
+
+
+
+// const timeout = 0
+
+// function displayLoader(){
+//    timeout = setTimeout(displayCipherText, 3000);
+// }
+
+
+
+
