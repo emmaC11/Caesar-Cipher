@@ -165,9 +165,6 @@ body{
     border: 2px solid var(--purple);
 }
 
-#outputLabel{
-    display: none;
-}
 
 .return{
     font-size: 3rem;
