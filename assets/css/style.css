@@ -265,4 +265,10 @@ footer{
     }
 }
 
+@media only screen and (max-width: 580px) {
+    .help-container{
+        margin: 1rem;
+    }
+}
+
 
