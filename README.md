@@ -29,3 +29,14 @@ There is a help section that users can view if they are unsure about how to use 
 This websites design follows a minimalistic approach for a more professional look. I took inspiration from simplistic websites such as the Apple Store. It is an intuitive, easily navigable website with a bright colour scheme that aims for an elegant, simplistic look. 
 ## Colour Scheme
 This website uses a purple colour palette. The primary colours used throughout the website are dark purple (#7f39fb), violet (#be83f1), pink (#e680c7) & grey (#a6a6a6;). I chose a bright colour scheme to make the design unique and to catch the users attention. 
+
+## Typography
+The headers throughout the website are using the <strong>Roboto</strong> font with letter spacing of 4px. The rest of the website also uses the <strong>Roboto</strong>.
+
+## Wireframes
+The wireframes were created using [Canva](https://www.canva.com/)
+
+![image](https://user-images.githubusercontent.com/83119583/185807478-43c42ae1-d627-4492-9c41-2b140a07822b.png)
+![image](https://user-images.githubusercontent.com/83119583/185807515-8ebe1399-2cfc-4456-a5c3-b6052111879b.png)
+![image](https://user-images.githubusercontent.com/83119583/185807544-3ac00207-ec89-4b15-8179-ddb8d6d1a3f0.png)
+
