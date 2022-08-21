@@ -288,6 +288,7 @@ function displayOutput() {
 function loadEffect(){
    timeout = setInterval(displayOutput, 3000);
    spinner.style.display = "block"
+   ciphertextoutput.style.display = "none"
 }
 
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
