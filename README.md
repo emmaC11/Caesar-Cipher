@@ -44,8 +44,10 @@ The wireframes were created using [Canva](https://www.canva.com/)
 
 ## Home Screen
 * At the top of the page, the thick purple heading displays the websites name 'Caesar Cipher' with a animated lock icon positioned to the right of the text.
-* The home screen displays 3 pink buttons the users can click - 'Encrypt', 'Decrypt' & 'Help'. 
+* The home screen displays 3 pink buttons the users can click - 'Encrypt', 'Decrypt' & 'Help'.
+* There are 2 prompts to encoruage the user to take an action (click button) 
 * The heading is thick with a dark purple background colour. The text colour is white to make it visible over the dark background.
 * The heading indicates clearly the websites purpose
 * The footer contains a wave image with the colours from the purple palette to match the theme of the site.
 
+![image](https://user-images.githubusercontent.com/83119583/185808527-ab56cf33-f989-4069-a52b-3f91bac32bc1.png)
