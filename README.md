@@ -24,3 +24,8 @@ CSS Media Queries are used to make the website responsive on different screen si
 
 There is a help section that users can view if they are unsure about how to use a Caesar Cipher and want to learn about it's functionality.
 >As a first time user, I want to learn about a Caesar Cipher is & how to use one.
+
+# Design
+This websites design follows a minimalistic approach for a more professional look. I took inspiration from simplistic websites such as the Apple Store. It is an intuitive, easily navigable website with a bright colour scheme that aims for an elegant, simplistic look. 
+## Colour Scheme
+This website uses a purple colour palette. The primary colours used throughout the website are dark purple (#7f39fb), violet (#be83f1), pink (#e680c7) & grey (#a6a6a6;). I chose a bright colour scheme to make the design unique and to catch the users attention. 
