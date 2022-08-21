@@ -277,9 +277,16 @@ decrypt.addEventListener('click', () => {
 
 //STORE CIPHERTEXT OUTPUT IN VARIABLE & DISPLAY CHANGES IN FUNCTION
 let ciphertextoutput = document.getElementById('output');
+let spinner = document.getElementById('load');
+let timeout = ""
+
 function displayOutput() {
    ciphertextoutput.style.display = "block"
    spinner.style.display = "none"
+}
+
+function loadEffect(){
+   timeout = setInterval(displayOutput, 3000);
 }
 
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
