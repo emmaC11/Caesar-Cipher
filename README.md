@@ -51,3 +51,15 @@ The wireframes were created using [Canva](https://www.canva.com/)
 * The footer contains a wave image with the colours from the purple palette to match the theme of the site.
 
 ![image](https://user-images.githubusercontent.com/83119583/185808527-ab56cf33-f989-4069-a52b-3f91bac32bc1.png)
+
+## Encrypt/Decrypt Section
+* When a user clicks the 'encrypt' or 'decrypt' button, a screen is displayed where they can input a message and a key.
+* 'Encrypt' or 'Decrypt' text will be displayed based on the button the user clicked.
+
+![image](https://user-images.githubusercontent.com/83119583/185808924-3cb594ac-7af6-495b-ad7a-e4069fac572d.png)
+
+## Other Images to use in readme
+![image](https://user-images.githubusercontent.com/83119583/185808989-71a8909e-60db-4c3e-ab1b-e3e6ad9cc5c0.png)
+![image](https://user-images.githubusercontent.com/83119583/185809014-0fe62d44-c9b0-4148-8796-34334ede9c57.png)
+![image](https://user-images.githubusercontent.com/83119583/185809044-8c44ea92-42fd-4f02-939f-3135bed5a39b.png)
+![image](https://user-images.githubusercontent.com/83119583/185809121-9e3c5c0a-ceae-4d43-850b-ed086c85acd6.png)
