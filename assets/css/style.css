@@ -190,7 +190,7 @@ body{
     flex-direction: column;
     font-size: 2rem;
     line-height: 4rem;
-    margin: 5rem;
+    margin: 1rem 5rem 5rem 5rem;
 }
 
 .help-content{
