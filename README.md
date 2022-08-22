@@ -89,6 +89,21 @@ When I tested my website, an audit report was returned indicating that my websit
 * The return button in the help page returns to index.html (the home screen) when clicked.
 * The 'encrypt'/'decrypt' display the ciphertext when clicked.
 
+## Bugs Identified During Testing
+* Add content when compleying manual testing
+
+## Bugs Identified During Development
+* When I was pushing my code, the index.html file was untracked. I discovered this bug when I could not see the index.html file in my [GitHub Repo](https://github.com/emmaC11/Caesar-Cipher). I solved this bug by using a 'git add index.html' command, then doing a git push.
+* Using the css height property in percentages was not working when trying to set a height to a div, using the unit of measurement 'rem' solved the issue.
+* When using the .getElemenetByID method, I did not put the ID I was targeting in single quotes. This causes issues when I was using IDs that contained a '-'.
+* When trying to obtain the key number from the input field, by default the key had string data type, I needed to convert to an int. I changed the data type by adding a '+' symbol when retirieving the ID, this changes the data type to an int.
+>  let key = +document.getElementById('key').value;
+* I tried naming a variable 'prompt' but prompt is a built-in method in JavaScript, I opted for a different variable name.
+*  I orginally took the approach of having several different pages in the site, I wanted to have a seperate page for encryption & decryption. However, I did not realise that I would need to have several different JS files as the DOM is refreshed when a new page is opened. I used the PP2 slack channel for assitant and received assistant from a fellow student which helped me identify this issue. I then decided to take a new approach and mimic page changes by hiding and showing elements. 
+> returnArrow.style.display = "block";
+> footer.style.backgroundImage = "none"
+
+
 ## Other Images to use in readme
 ![image](https://user-images.githubusercontent.com/83119583/185809044-8c44ea92-42fd-4f02-939f-3135bed5a39b.png)
 ![image](https://user-images.githubusercontent.com/83119583/185809121-9e3c5c0a-ceae-4d43-850b-ed086c85acd6.png)
