@@ -148,7 +148,7 @@ function getKey() {
       console.log("key is returned")
       return key
    } else {
-      alert(`The key value must be greater than 0 and less than ${max_key_length}`);
+      //alert(`The key value must be greater than 0 and less than ${max_key_length}`);
 
    }
    console.log(key);
@@ -299,18 +299,59 @@ function loadEffect(){
    ciphertextoutput.style.display = "none"
 }
 
+
+// function keyValidate()
+// {
+//    let valid = true
+//    if (key >= 1 && key <= max_key_length) {
+//       console.log("key is returned")
+//       return key
+//    } else {
+//       valid = false
+//       alert(`The key value must be greater than 0 and less than ${max_key_length}`);
+// }
+
+//    console.log(`this is the key valid function ${valid}`)
+//    return valid
+  
+// }
+
+
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
 generateBtn.addEventListener('click', () => {
    console.log("this is the decrypt event listener");
    console.log(`the cipher mode is ${cipherMode}`)
-   if(cipherMode === "encrypt")
+  
+   
+   let testKey = getKey();
+   let testMessage = getMessage();
+
+   console.log(typeof(testKey));
+   console.log(testKey)
+   console.log(max_key_length);
+
+   if(testMessage === "" ||testKey === undefined )
+      {
+         alert("encrypt function test - this the the encrypt validation");
+      }
+  
+
+      else{
+
+         if(cipherMode === "encrypt")
    {
-      encryptMessage(getMessage(), getKey());
+         encryptMessage(getMessage(), getKey());
+      
    }
    else {
       decryptMessage(getMessage(), getKey());
    }
    loadEffect();
+
+      }
+
+
+   
 
    //DISPLAY LABEL WHEN BUTTON IS CLICKED
    // outputLabel.style.display = "block"
