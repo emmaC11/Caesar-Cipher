@@ -60,15 +60,15 @@ The wireframes were created using [Canva](https://www.canva.com/)
 * When the 'encrypt', 'decrypt' button is clicked, a loading symbil is displayed while the text is being translated into ciphertext. The ciphertext is then displayed to the user.
 * This section has a return arrow that returns to the home page.
 
+![image](https://user-images.githubusercontent.com/83119583/185808924-3cb594ac-7af6-495b-ad7a-e4069fac572d.png)
+![image](https://user-images.githubusercontent.com/83119583/185808989-71a8909e-60db-4c3e-ab1b-e3e6ad9cc5c0.png)
+![image](https://user-images.githubusercontent.com/83119583/185809014-0fe62d44-c9b0-4148-8796-34334ede9c57.png)
+
 ## Help Section
 * The help section gives the user information about what a Caesar Cipher is & how to use one.
 * The design is identical to the home screen, there is a thick purple heading that displays the websites name 'Caesar Cipher' with a animated lock icon positioned to the right of the text. The footer contains a wave image with the colours from the purple palette to match the theme of the site.
 * There is a summary paragraph that explains how to use the Caesair Cipher.
 * ADD IMAGE
-
-![image](https://user-images.githubusercontent.com/83119583/185808924-3cb594ac-7af6-495b-ad7a-e4069fac572d.png)
-![image](https://user-images.githubusercontent.com/83119583/185808989-71a8909e-60db-4c3e-ab1b-e3e6ad9cc5c0.png)
-![image](https://user-images.githubusercontent.com/83119583/185809014-0fe62d44-c9b0-4148-8796-34334ede9c57.png)
 
 ## Other Images to use in readme
 ![image](https://user-images.githubusercontent.com/83119583/185809044-8c44ea92-42fd-4f02-939f-3135bed5a39b.png)
