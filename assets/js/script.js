@@ -1,4 +1,4 @@
-let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ";
 let max_key_length = letters.length
 let shiftedLetters = "";
 
@@ -325,7 +325,7 @@ generateBtn.addEventListener('click', () => {
 
    if(getMessage() === "" ||getKey() === undefined )
       {
-         alert("encrypt function test - this the the encrypt validation");
+         alert(`Fields cannot be left blank & the key value must be greater than 0 and less than ${max_key_length}`);
       }
   
 
