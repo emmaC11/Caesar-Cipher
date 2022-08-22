@@ -121,6 +121,19 @@ When I tested my website, an audit report was returned indicating that my websit
 ![image](https://user-images.githubusercontent.com/83119583/185894383-d7f33863-eca8-46d5-adb2-720b56839fd1.png)
 
 
+# **Deployment**
+## Project Creation
+This project was created using Gitpod, Gitpod provides prebuilt development environments with a variety of IDEs. 
+
+To use Gitpod, install the Gitpod extension on either Firefox or Chrome. When the extension is installed, it adds a green Gitpod button to Github, where we can click to create a workspace in Gitpod.
+
+For this project, I used the Visual Studio IDE. I used the prebuilt environment provided by [Code Institue](https://github.com/Code-Institute-Org/gitpod-full-template) to start this project. I clicked the 'use this template' button and named my repository 'PP1-starwars'. I then created a Gitpod workspace by clicking the green gitpod button in my [Caesar-Cipher](https://github.com/emmaC11/Caesar-Cipher) repository.
+
+I used the following commands throughout the development of this project:
+* **python3 -m http.server**  - This command runs a local webserver to view the project.
+* **git add .** - This command adds all the changes that have been in the working directory to the staging area. Ready to be committed.
+* **git commit -m ""** - This command is used to write descriptive messages of what changes have been made to the code and commits the changes to the local repository.
+* **git push** - This command pushes all the committed changes to the Github repository.
 
 
 ## Other Images to use in readme
