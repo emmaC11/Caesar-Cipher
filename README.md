@@ -70,6 +70,25 @@ The wireframes were created using [Canva](https://www.canva.com/)
 * There is a summary paragraph that explains how to use the Caesair Cipher.
 * ADD IMAGE
 
+# **Testing**
+## Validator Testing
+* add conntent
+
+## Responsive Testing
+* The website was tested on several devices and screen sizes to ensure it was responsvie regardless of the screen size. It has been tested on desktop, Ipad Mini, Ipad Air, Iphone 5, Samsung Galaxy S8+, Iphone X, Iphone SE. Mobile devices have been tested in portrait and landscape mode. The site has been tested in Chrome, Edge, FireFox & Brave browsers.
+
+## Lighthouse Testing
+* The Lighthouse tool in Chrome DevTools is used to test a websites performance & accessibility. It is an open-source automated tool used to improve the quality of webpages. 
+When I tested my website, an audit report was returned indicating that my website has high performance and is accessible.
+* ADD SCREENSHOT
+
+## Event Listener Testing
+* All button clicks trigger an event. When the 'encrypt' or 'decrypt' button is clicked on the home screen, the home page is hidden and the input section is displayed.
+* The return button in the encrypt decrypt section hides the input section and displays the home screen when clicked.
+* The help button on the home screen, opens the help.html page and displays the help page.
+* The return button in the help page returns to index.html (the home screen) when clicked.
+* The 'encrypt'/'decrypt' display the ciphertext when clicked.
+
 ## Other Images to use in readme
 ![image](https://user-images.githubusercontent.com/83119583/185809044-8c44ea92-42fd-4f02-939f-3135bed5a39b.png)
 ![image](https://user-images.githubusercontent.com/83119583/185809121-9e3c5c0a-ceae-4d43-850b-ed086c85acd6.png)
