@@ -12,7 +12,7 @@ const generateBtn = document.getElementById('encrypt-decrypt');
 
 //ENCRYPT DECRYPT SECTION
 const cipherContent = document.getElementById('cipher-container');
-let message = document.getElementById('message').value;
+let message = document.getElementById('message');
 let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
 const heading = document.getElementById('main-title');
@@ -322,15 +322,8 @@ generateBtn.addEventListener('click', () => {
    console.log("this is the decrypt event listener");
    console.log(`the cipher mode is ${cipherMode}`)
   
-   
-   let testKey = getKey();
-   let testMessage = getMessage();
 
-   console.log(typeof(testKey));
-   console.log(testKey)
-   console.log(max_key_length);
-
-   if(testMessage === "" ||testKey === undefined )
+   if(getMessage() === "" ||getKey() === undefined )
       {
          alert("encrypt function test - this the the encrypt validation");
       }
