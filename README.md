@@ -55,11 +55,14 @@ The wireframes were created using [Canva](https://www.canva.com/)
 ## Encrypt/Decrypt Section
 * When a user clicks the 'encrypt' or 'decrypt' button, a screen is displayed where they can input a message and a key.
 * 'Encrypt' or 'Decrypt' text will be displayed based on the button the user clicked.
+* There is an input field where the user can enter the message they want to encrypt/decrypt.
+* There is an input field where the user can enter the key. Decryted text will only be readable if the user knows the key used to encrypt the text.
+* When the 'encrypt', 'decrypt' button is clicked, a loading symbil is displayed while the text is being translated into ciphertext. The ciphertext is then displayed to the user.
 
 ![image](https://user-images.githubusercontent.com/83119583/185808924-3cb594ac-7af6-495b-ad7a-e4069fac572d.png)
-
-## Other Images to use in readme
 ![image](https://user-images.githubusercontent.com/83119583/185808989-71a8909e-60db-4c3e-ab1b-e3e6ad9cc5c0.png)
 ![image](https://user-images.githubusercontent.com/83119583/185809014-0fe62d44-c9b0-4148-8796-34334ede9c57.png)
+
+## Other Images to use in readme
 ![image](https://user-images.githubusercontent.com/83119583/185809044-8c44ea92-42fd-4f02-939f-3135bed5a39b.png)
 ![image](https://user-images.githubusercontent.com/83119583/185809121-9e3c5c0a-ceae-4d43-850b-ed086c85acd6.png)
