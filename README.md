@@ -58,6 +58,7 @@ The wireframes were created using [Canva](https://www.canva.com/)
 * There is an input field where the user can enter the message they want to encrypt/decrypt.
 * There is an input field where the user can enter the key. Decryted text will only be readable if the user knows the key used to encrypt the text.
 * When the 'encrypt', 'decrypt' button is clicked, a loading symbil is displayed while the text is being translated into ciphertext. The ciphertext is then displayed to the user.
+* This section has a return arrow that returns to the home page.
 
 ![image](https://user-images.githubusercontent.com/83119583/185808924-3cb594ac-7af6-495b-ad7a-e4069fac572d.png)
 ![image](https://user-images.githubusercontent.com/83119583/185808989-71a8909e-60db-4c3e-ab1b-e3e6ad9cc5c0.png)
