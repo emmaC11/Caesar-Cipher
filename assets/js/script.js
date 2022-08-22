@@ -183,7 +183,7 @@ function encryptMessage(message, key) {
          letterIndex -= letters.length;
          console.log(letterIndex)
       } else if (letterIndex < 0) {
-         letterIndex += letters.length
+         // letterIndex += letters.length
          console.log(letterIndex)
       }
 
@@ -192,8 +192,16 @@ function encryptMessage(message, key) {
    }
 
    console.log(translated);
-   ciphertext.textContent = translated;
-   return translated;
+   
+   if(translated.includes("undefined")){
+      translated.replace('undefined','');
+      console.log("this is the undefined if")
+      let updatedTranslated =  translated.replace('undefined','');
+      ciphertext.textContent = updatedTranslated;
+   }
+   else{
+      ciphertext.textContent = translated;
+   }
 
    console.log(message)
    console.log(key)
