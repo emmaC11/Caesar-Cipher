@@ -1,4 +1,4 @@
-let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ";
+let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let max_key_length = letters.length
 let shiftedLetters = "";
 
@@ -183,12 +183,13 @@ function encryptMessage(message, key) {
          letterIndex -= letters.length;
          console.log(letterIndex)
       } else if (letterIndex < 0) {
-         // letterIndex += letters.length
+         //letterIndex += letters.length
          console.log(letterIndex)
       }
 
       //ADDS THE SHIFTED LETTERS TO THE TRANSLATED VARIABLE
       translated += letters[letterIndex]
+      
    }
 
    console.log(translated);
@@ -232,7 +233,7 @@ function decryptMessage(message,key)
       if (letterIndex >= letters.length) {
          letterIndex -= letters.length;
          console.log(letterIndex)
-      } else if (letterIndex < 0) {
+      } else if (letterIndex < 0 && letterIndex != -1) {
          letterIndex += letters.length
          console.log(letterIndex)
       }
@@ -242,7 +243,16 @@ function decryptMessage(message,key)
    }
 
    console.log(translated);
-   ciphertext.textContent = translated;
+   if(translated.includes("undefined")){
+      translated.replace('undefined','');
+      console.log("this is the undefined if")
+      let updatedTranslated =  translated.replace('undefined','');
+      ciphertext.textContent = updatedTranslated;
+   }
+   else{
+      ciphertext.textContent = translated;
+   }
+   
    return translated;
 
 }
