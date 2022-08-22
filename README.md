@@ -145,6 +145,15 @@ I used the following commands throughout the development of this project:
 7. Click the link provided to go to the deployed website.
 8. The live link can be found here - [Caesar-Cipher](https://github.com/emmaC11/Caesar-Cipher).
 
+## Run Locally
+1. Locate the [GitHub Repository](https://github.com/emmaC11/Caesar-Cipher).
+2. Click the 'Code' dropdown button.
+3. Copy the git URL from the HTTPS text bar.
+4. Open a terminal window and locate the directory where you want to store the project.
+5. Type the 'git clone' command in the terminal, then paste the git URL. Click return on your keyboard to enter the command.
+6. A clone of the project will be created locally on your machine.
+**Note** - git commands only work if git is installed on your machine. Find installation documentation [here](https://git-scm.com/).
+
 
 
 ## Other Images to use in readme
