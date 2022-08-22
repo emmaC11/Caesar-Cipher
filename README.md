@@ -107,6 +107,8 @@ When I tested my website, an audit report was returned indicating that my websit
 * When trying to capture the mode the user had selected (encrypt or decrypt), the mode was returning encrypt each time as it had a default value of encrypt. I solved this issue by having a global varibale with an empty value and assigning it a mode based on the event listener called (either encrypt or decrypt).
 * I pushed some poor commit messages, I was thinking ahead of what lines of code I would be writing in the next step of a function and adding commit messages based on that. 
 * If a user wanted to encrypt/decrypt another message after encrypting one previously, the previous output would still display and the load effect was redundant. I fixed this issue by setting the output display to none in the load effect function.
+* Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
+![image](https://user-images.githubusercontent.com/83119583/185887975-9b112f88-6334-4dea-adc7-a9ae1520ae4e.png)
 
 
 ## Other Images to use in readme
