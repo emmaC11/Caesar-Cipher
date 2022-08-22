@@ -156,6 +156,3 @@ I used the following commands throughout the development of this project:
 
 
 
-## Other Images to use in readme
-![image](https://user-images.githubusercontent.com/83119583/185809044-8c44ea92-42fd-4f02-939f-3135bed5a39b.png)
-![image](https://user-images.githubusercontent.com/83119583/185809121-9e3c5c0a-ceae-4d43-850b-ed086c85acd6.png)
