@@ -155,4 +155,22 @@ I used the following commands throughout the development of this project:
 **Note** - git commands only work if git is installed on your machine. Find installation documentation [here](https://git-scm.com/).
 
 
+# **Credits/References**
+## Content & Media
+* The footer image was generated using [Haikei](https://app.haikei.app/)
+
+## Code
+* I used the 'Invent Your Own Computer Games With Python'book to help with the encrypt/decrypt algorithm
+* I used [w3schools](https://www.w3schools.com/jsref/jsref_length_string.asp) to find the syntax for the length method in JavaScript.
+* I used [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp) when trying to create a modal.
+* This [StackOverflow](https://stackoverflow.com/questions/13693580/how-to-make-a-document-getelementbyid-value-into-an-integer-variable-not-a-stri) thread helped me understand how to change a datatype from a string to an integer.
+* I referenced this [w3schools](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp) article when working with the different display properties.
+* [Sticky Footer](https://www.w3schools.com/howto/howto_css_fixed_footer.asp) referenced when trying to to stick the footer to the bottom of the page.
+* [StackOverflow](https://stackoverflow.com/questions/2438811/css-stopping-div-pushing-content) thread assited in solving the bug where the button elements were being pushed down due to the typewriter effect.
+* [Page Loader](https://www.w3schools.com/howto/howto_css_loader.asp) & [Timeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout) were referenced when creating the loading effect and the typewriter.
+* [CSS Fade In](https://blog.hubspot.com/website/css-fade-in) referenced when creating the fade-in effect on the outputted cipertext.
+
+## Achknowledgements
+I would like to thank my mentor Ronan for his guidance throughout my project.
+I would also like to thank Richard for his masterclasses.
 
