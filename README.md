@@ -135,6 +135,17 @@ I used the following commands throughout the development of this project:
 * **git commit -m ""** - This command is used to write descriptive messages of what changes have been made to the code and commits the changes to the local repository.
 * **git push** - This command pushes all the committed changes to the Github repository.
 
+## Deployment to GitHub Pages
+1. Navigate to [GitHub Repository](https://github.com/emmaC11/Caesar-Cipher)
+2. Click the 'Settings' tab.
+3. Scroll down to the 'pages' tab on the navigation bar.
+4. Open the 'Pages' tab.
+5. Select 'main' branch as the source.
+6. Click 'save'.
+7. Click the link provided to go to the deployed website.
+8. The live link can be found here - [Caesar-Cipher](https://github.com/emmaC11/Caesar-Cipher).
+
+
 
 ## Other Images to use in readme
 ![image](https://user-images.githubusercontent.com/83119583/185809044-8c44ea92-42fd-4f02-939f-3135bed5a39b.png)
