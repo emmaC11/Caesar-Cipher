@@ -102,6 +102,11 @@ When I tested my website, an audit report was returned indicating that my websit
 *  I orginally took the approach of having several different pages in the site, I wanted to have a seperate page for encryption & decryption. However, I did not realise that I would need to have several different JS files as the DOM is refreshed when a new page is opened. I used the PP2 slack channel for assitant and received assistant from a fellow student which helped me identify this issue. I then decided to take a new approach and mimic page changes by hiding and showing elements. 
 > returnArrow.style.display = "block";
 > footer.style.backgroundImage = "none"
+* I could not use the .textcontent method on an input field so I changed the ciphertext output to a span tag.
+* When trying to implement the help page using a modal, all other elements in the dom were hidden so I could not implement any user intereactvity like a close button etc. I decided to store the help information in a seperate page so the user can navigate between content easily.
+* When trying to capture the mode the user had selected (encrypt or decrypt), the mode was returning encrypt each time as it had a default value of encrypt. I solved this issue by having a global varibale with an empty value and assigning it a mode based on the event listener called (either encrypt or decrypt).
+* I pushed some poor commit messages, I was thinking ahead of what lines of code I would be writing in the next step of a function and adding commit messages based on that. 
+* If a user wanted to encrypt/decrypt another message after encrypting one previously, the previous output would still display and the load effect was redundant. I fixed this issue by setting the output display to none in the load effect function.
 
 
 ## Other Images to use in readme
