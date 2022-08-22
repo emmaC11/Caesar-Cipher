@@ -110,6 +110,16 @@ When I tested my website, an audit report was returned indicating that my websit
 * Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
 ![image](https://user-images.githubusercontent.com/83119583/185887975-9b112f88-6334-4dea-adc7-a9ae1520ae4e.png)
 ![image](https://user-images.githubusercontent.com/83119583/185888848-3c1f94e4-3665-4e2a-bde1-32e7c3169c2c.png)
+*
+# **Development Environment**
+## Dev Structure
+* The first step for this PP2 project was to come up with the project idea, I was thinking perhaps a game or a quiz. But I wanted to improve working with loops & if statements and thought of creating a Caesar Cipher. Most Caesar Ciphers tend be console-based apps or either have a dull front-end, so I wanted to make a Caesar Cipher with an intuitive, well-designed front-end.
+* I then moved on to creating some wireframes. I have learned from PP1 that having a good plan before writing any lines of code is critical. I felt I was more productive with my time on this project as I knew the design I wanted to implement and the algorithm I wanted to write.
+* To keep track of what tasks I needed to complete and what work I had completed, I created a kanban board. A straight forward one in [Google Keep](https://keep.google.com/) with the headings 'to-do', 'in-progress', 'complete'.
+![image](https://user-images.githubusercontent.com/83119583/185893007-9c84fc3d-5532-4f01-a0b5-9043fada4280.png)
+* I kept a onenote notebook to log all notes, links etc associated with PP2. This help me keep track of what resources I used, feedback from mentor sessions, masterclass notes & bugs tracked throughout the development cycle.
+![image](https://user-images.githubusercontent.com/83119583/185894383-d7f33863-eca8-46d5-adb2-720b56839fd1.png)
+
 
 
 
