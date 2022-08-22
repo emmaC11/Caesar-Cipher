@@ -127,7 +127,7 @@ This project was created using Gitpod, Gitpod provides prebuilt development envi
 
 To use Gitpod, install the Gitpod extension on either Firefox or Chrome. When the extension is installed, it adds a green Gitpod button to Github, where we can click to create a workspace in Gitpod.
 
-For this project, I used the Visual Studio IDE. I used the prebuilt environment provided by [Code Institue](https://github.com/Code-Institute-Org/gitpod-full-template) to start this project. I clicked the 'use this template' button and named my repository 'PP1-starwars'. I then created a Gitpod workspace by clicking the green gitpod button in my [Caesar-Cipher](https://github.com/emmaC11/Caesar-Cipher) repository.
+For this project, I used the Visual Studio IDE. I used the prebuilt environment provided by [Code Institue](https://github.com/Code-Institute-Org/gitpod-full-template) to start this project. I clicked the 'use this template' button and named my repository 'Caesar-Cipher'. I then created a Gitpod workspace by clicking the green gitpod button in my [Caesar-Cipher](https://github.com/emmaC11/Caesar-Cipher) repository.
 
 I used the following commands throughout the development of this project:
 * **python3 -m http.server**  - This command runs a local webserver to view the project.
