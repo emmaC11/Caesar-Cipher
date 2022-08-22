@@ -109,6 +109,8 @@ When I tested my website, an audit report was returned indicating that my websit
 * If a user wanted to encrypt/decrypt another message after encrypting one previously, the previous output would still display and the load effect was redundant. I fixed this issue by setting the output display to none in the load effect function.
 * Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
 ![image](https://user-images.githubusercontent.com/83119583/185887975-9b112f88-6334-4dea-adc7-a9ae1520ae4e.png)
+![image](https://user-images.githubusercontent.com/83119583/185888848-3c1f94e4-3665-4e2a-bde1-32e7c3169c2c.png)
+
 
 
 ## Other Images to use in readme
