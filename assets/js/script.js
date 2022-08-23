@@ -331,11 +331,12 @@ function loadEffect(){
 generateBtn.addEventListener('click', () => {
    console.log("this is the decrypt event listener");
    console.log(`the cipher mode is ${cipherMode}`)
-  
-
-   if(getMessage() === "" ||getKey() === undefined )
+ 
+   let includesSpaces = message.value.includes(" ")
+ 
+   if(getMessage() === "" ||getKey() === undefined || includesSpaces )
       {
-         alert(`Fields cannot be left blank & the key value must be greater than 0 and less than ${max_key_length}`);
+         alert(`Fields cannot be left blank\nFields cannot have spaces\nThe key value must be greater than 0 and less than ${max_key_length}`);
       }
   
 
