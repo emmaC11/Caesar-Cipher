@@ -135,11 +135,7 @@ When I tested my website, an audit report was returned indicating that my websit
 | Validation - max key range | When the encrypt/decrypt button is clicked, an alert will be displayed informing the user that the input is invalid & the encryption/decryption will not occurr | Click 'encrypt', enter 'myTesting' in the 'MESSAGE TO ENCRYPT' field. Enter '52' in the 'KEY NUMBER:' field. Click 'encrypt' button | An alert was displayed with the message "`Fields cannot be left blank. Fields cannot have spaces. The key value must be greater than 0 and less than 52", there were no outputs the encryption function did not trigger |
 
 
-
-## Bugs Identified During Testing
-* Add content when compleying manual testing
-
-## Bugs Identified During Development
+## Bugs Identified During Development & Testing
 * When I was pushing my code, the index.html file was untracked. I discovered this bug when I could not see the index.html file in my [GitHub Repo](https://github.com/emmaC11/Caesar-Cipher). I solved this bug by using a 'git add index.html' command, then doing a git push.
 * Using the css height property in percentages was not working when trying to set a height to a div, using the unit of measurement 'rem' solved the issue.
 * When using the .getElemenetByID method, I did not put the ID I was targeting in single quotes. This causes issues when I was using IDs that contained a '-'.
@@ -157,7 +153,10 @@ When I tested my website, an audit report was returned indicating that my websit
 * Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
 ![image](https://user-images.githubusercontent.com/83119583/185887975-9b112f88-6334-4dea-adc7-a9ae1520ae4e.png)
 ![image](https://user-images.githubusercontent.com/83119583/185888848-3c1f94e4-3665-4e2a-bde1-32e7c3169c2c.png)
-*
+* When trying to decrypt strings with spaces, the ciphertext output contained empty spaces in incorrect places due to the spaces. To fix this error, I enforced validation where the input must not include any space characters.
+* When trying to encrypt string with a key of 52, the encrypted output was identical to original test as the length of the string containing the characters is 52. To fix this error, I enforced validation where the key cannot be equal to 51.
+* When encrypting/decrypting a string that contains a symbol, it displays undefined. To fix this error, I used the replaceAll() function to replace the undefined text with an empty space (') meaning it would not display in the ciphertext output.
+
 # **Development Environment**
 ## Dev Structure
 * The first step for this PP2 project was to come up with the project idea, I was thinking perhaps a game or a quiz. But I wanted to improve working with loops & if statements and thought of creating a Caesar Cipher. Most Caesar Ciphers tend be console-based apps or either have a dull front-end, so I wanted to make a Caesar Cipher with an intuitive, well-designed front-end.
