@@ -1,7 +1,39 @@
 # Caesar Cipher
-This application can convert words & sentences into a secret code. It can also convert secert codes back into it's original text.
-The secret codes can only be understood if the user knows the key to the codes
+This application can convert words into a secret code. It can also convert secert codes back into it's original text.
+The secret codes can only be understood if the user knows the key to the codes.
 
+# **Table Of Contents**
+* [User Experience & Design](#user-experience--design)
+    * [User Stories](#user-stories)
+        * [Structure](#structure)
+    * [Design](#design)
+        * [Colour Scheme](#colour-scheme)
+        * [Typography](#typography)
+        * [Wireframes](#wireframes)
+* [Features](#features)
+    * [Home Screen](#home-screen)
+    * [Encrypt/Decrypt Section](#encryptdecrypt-section)
+    * [Help Section](#help-section)
+
+* [Testing](#testing)
+    * [Validator Testing](#validator-testing)
+    * [Responsive Testing](#responsive-testing)
+    * [Lighthouse Testing](#lighthouse-testing)
+    * [Event Listener Testing](#event-listener-testing)
+    * [Manual Testing](#manual-testing)
+    * [Bugs](#bugs-identified-during-development--testing)
+
+* [Development Environment](#development-environment)
+    * [Development Structure](#dev-structure)
+* [Deployment](#deployment)
+    * [Project Creation](#project-creation)
+    * [GitHub Pages](#deployment-to-github-pages)
+    * [Run Locally](#run-locally)
+
+* [Credits/References](#creditsreferences)
+    * [Content & Media](#content--media)
+    * [Code](#code)
+    * [Achknowledgements](#achknowledgements)
 # **User Experience & Design**
 
 # User Stories
