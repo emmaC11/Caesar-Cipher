@@ -189,21 +189,25 @@ function encryptMessage(message, key) {
 
       //ADDS THE SHIFTED LETTERS TO THE TRANSLATED VARIABLE
       translated += letters[letterIndex]
-      
+
+  
    }
 
    console.log(translated);
-   
+
    if(translated.includes("undefined")){
-      translated.replace('undefined','');
-      console.log("this is the undefined if")
-      let updatedTranslated =  translated.replace('undefined','');
-      ciphertext.textContent = updatedTranslated;
+      let newTranslated = translated.replaceAll('undefined','')
+      console.log("this is the replace all if")
+      ciphertext.textContent = newTranslated;
    }
    else{
+      ("this is the replace all else")
       ciphertext.textContent = translated;
    }
 
+   
+   
+       
    console.log(message)
    console.log(key)
 }
@@ -244,16 +248,15 @@ function decryptMessage(message,key)
 
    console.log(translated);
    if(translated.includes("undefined")){
-      translated.replace('undefined','');
-      console.log("this is the undefined if")
-      let updatedTranslated =  translated.replace('undefined','');
-      ciphertext.textContent = updatedTranslated;
+      let newTranslated = translated.replaceAll('undefined','')
+      console.log("this is the replace all if")
+      ciphertext.textContent = newTranslated;
    }
    else{
+      ("this is the replace all else")
       ciphertext.textContent = translated;
    }
    
-   return translated;
 
 }
 
