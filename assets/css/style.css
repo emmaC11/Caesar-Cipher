@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&display=swap');
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace; */
 
 *{
     margin: 0;
@@ -8,6 +6,7 @@ font-family: 'Roboto Mono', monospace; */
     border:0;
 }
 
+/* COLOUR PALETTE */
 :root{
     --pink: #e680c7;
     --purple: #be83f1;
@@ -23,12 +22,9 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
-    /* background-color: var(--purple); */
-    /* background: rgb(190,131,241);
-    background: linear-gradient(90deg, rgba(190,131,241,1) 0%, rgba(190,131,241,1) 35%, rgba(230,128,199,1) 100%); */
 }
 
-/* home page - heading */
+/* HEADING ON EACH PAGE */
 #main-title{
     width: 100%;
     background-color: var(--darkpurple);
@@ -40,12 +36,9 @@ body{
     margin-bottom: 1rem;
 }
 
-/* home page - body content */
-
+/* HOME PAGE - USER OPTIONS */
 #user-options{
     margin: 2rem;
-    /* display: none; */
-    /* display: block; */
 }
 
 #prompt{
@@ -53,18 +46,6 @@ body{
     text-transform: uppercase;
     padding-top: 5rem;
     font-size: 1.8rem;
-}
-
-#typetext{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    color: var(--blue);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    position: absolute;
-    left: 0;
-    right: 0;
 }
 
 .choice-buttons{
@@ -86,7 +67,6 @@ body{
    font-size: 1.5rem;
    cursor: pointer;
    transition: 1s;
-   /* position: absolute; */
    
 }
 
@@ -94,8 +74,8 @@ body{
     background-color: var(--pink);
 }
 
+/* ENCRYPT/DECRYPT SECTION */
 #cipher-container{
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     display: none;
@@ -110,8 +90,6 @@ body{
     width: 90%;
 }
 
-
-/* encrypt decrypt section */
 .encrypt-decrypt{
     width: 100%;
     height: auto;
@@ -162,10 +140,6 @@ body{
     padding: 3rem 2rem;
 }
 
-#e-text{
-    border: 2px solid var(--purple);
-}
-
 #ciphertext{
     font-size: 3rem;
 }
@@ -183,10 +157,19 @@ body{
 }
 
 
+/* FADE IN EFFECT */
 @keyframes fade {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+
+/* RETURN BUTTON */
+.return-home{
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: var(--blue); 
+}
 
 .return{
     font-size: 3rem;
@@ -195,13 +178,20 @@ body{
     display: none;
 }
 
-/* HELP SCREEN */
-.return-home{
-    font-size: 3rem;
-    margin-left: 2rem;
-    color: var(--blue); 
+/* TYPEWRITER EFFECT */
+#typetext{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: var(--blue);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
+/* HELP PAGE */
 .help-container{
     display: flex;
     justify-content: center;
@@ -220,9 +210,6 @@ body{
     margin-top: 2rem;
 }
 
-.typewriter-effect{
-    margin-bottom: 2rem;
-}
 
 /* 
 PAGE LOADER */
@@ -270,6 +257,7 @@ footer{
 }
 
 
+/* MEDIA QUERIES FOR RESPONSIVENESS */
 @media only screen and (max-width: 525px) {
     .cipher-content{
         height: 105rem;
