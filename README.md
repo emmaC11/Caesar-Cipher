@@ -72,7 +72,13 @@ The wireframes were created using [Canva](https://www.canva.com/)
 
 # **Testing**
 ## Validator Testing
-* add conntent
+* To verify that the HTML code written to the best standard, I conducted validator testing with the W3C Markup Validator. I fixed the errors and warnings and currently there are no errors or warnings in the HTML code.
+![image](https://user-images.githubusercontent.com/83119583/186231274-499561b7-b7ed-4221-b534-f279cbc4499f.png)
+
+*CSS styling was validated using the W3C CSS Validation Service to ensure the code was written to the expected standard. No errors were found when passing the code through the W3C CSS validator.
+![image](https://user-images.githubusercontent.com/83119583/186231591-0e67735b-b23f-4f09-a3b8-32b7b7e72bf4.png)
+
+
 
 ## Responsive Testing
 * The website was tested on several devices and screen sizes to ensure it was responsvie regardless of the screen size. It has been tested on desktop, Ipad Mini, Ipad Air, Iphone 5, Samsung Galaxy S8+, Iphone X, Iphone SE. Mobile devices have been tested in portrait and landscape mode. The site has been tested in Chrome, Edge, FireFox & Brave browsers.
@@ -80,7 +86,6 @@ The wireframes were created using [Canva](https://www.canva.com/)
 ## Lighthouse Testing
 * The Lighthouse tool in Chrome DevTools is used to test a websites performance & accessibility. It is an open-source automated tool used to improve the quality of webpages. 
 When I tested my website, an audit report was returned indicating that my website has high performance and is accessible.
-* ADD SCREENSHOT
 
 ## Event Listener Testing
 * All button clicks trigger an event. When the 'encrypt' or 'decrypt' button is clicked on the home screen, the home page is hidden and the input section is displayed.
