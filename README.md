@@ -215,6 +215,7 @@ I used the following commands throughout the development of this project:
 * [StackOverflow](https://stackoverflow.com/questions/2438811/css-stopping-div-pushing-content) thread assited in solving the bug where the button elements were being pushed down due to the typewriter effect.
 * [Page Loader](https://www.w3schools.com/howto/howto_css_loader.asp) & [Timeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout) were referenced when creating the loading effect and the typewriter.
 * [CSS Fade In](https://blog.hubspot.com/website/css-fade-in) referenced when creating the fade-in effect on the outputted cipertext.
+* [Typewriter](https://www.youtube.com/watch?v=mULM6KcF_mo) video for the typewriter effect on the home screen.
 
 ## Achknowledgements
 I would like to thank my mentor Ronan for his guidance throughout my project.
