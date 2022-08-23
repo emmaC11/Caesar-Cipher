@@ -286,7 +286,7 @@ footer{
 
 @media only screen and (max-width: 325px) {
     #main-title{
-        padding-left: 1.5rem;
+        padding-left: 0.5rem;
     }
 }
 
