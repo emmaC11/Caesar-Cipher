@@ -1,5 +1,5 @@
 # Caesar Cipher
-This application can convert words into a secret code. It can also convert secert codes back into it's original text.
+This application can convert words into secret code. It can also convert secert codes back into it's original text.
 The secret codes can only be understood if the user knows the key to the codes.
 
 # **Table Of Contents**
@@ -37,30 +37,30 @@ The secret codes can only be understood if the user knows the key to the codes.
 # **User Experience & Design**
 
 # User Stories
-* As a first time user, I want to learn about a Caesar Cipher is & how to use one.
+* As a first time user, I want to learn about a Caesar Cipher & how to use one.
 * As a first time user, I want to encrypt a string of text.
 * As a first time user, I want to decrypt a string of text.
 * As a first time user, I want to navigate throughout the site to complete different actions.
 * As a first time user, I want to view the website on all my devices (Iphone 10, Surface Pro 7+, 32 inch monitor)
 
 ## Structure
-This is a 2 page website, that has a simple user-interface making it easier for users to navigate the website and choose an action according to their needs. The home screen contains 3 buttons that a user can choose from. A user can choose to encrypt a message, decrypt a message, or click the help button if they are unsure of what action to take.
+This is a 2 page website, that has a simple user-interface, making it easier for users to navigate the website and choose an action according to their needs. The home screen contains 3 buttons that a user can choose from. A user can choose to encrypt a message, decrypt a message, or click the help button if they are unsure of what action to take.
 > As a first time user, I want to navigate throughout the site to complete different actions.
 
-An input section is displayed when a user selects the 'encrypt' or 'decrypt' button. The user can input their messages here and enter the key number of how many letters they want the message to shift. Their message will then be encrypted or decrypted based on their choice.
+An input section is displayed when a user selects the 'encrypt' or 'decrypt' button. The user can input their messages here and enter the key number which represents how many letters they want the message to shift. Their message will then be encrypted or decrypted based on their choice.
 > As a first time user, I want to encrypt a string of text.
 > As a first time user, I want to decrypt a string of text.
 
-CSS Media Queries are used to make the website responsive on different screen sizes. All sections are responsive and content styling changes based on the screen size the user is viewing the website with. This is to ensure that the content is readable and not squashed, all images are clear & visible.
+CSS Media Queries are used to make the website responsive on different screen sizes. All sections are responsive and content styling changes based on the screen size. This is to ensure that the content is readable and not squashed, all images are clear & visible.
 > As a first time user, I want to view the website on all my devices (Iphone 10, Surface Pro 7+, 32 inch monitor)
 
-There is a help section that users can view if they are unsure about how to use a Caesar Cipher and want to learn about it's functionality.
+There is a help section that users can view if they are unsure about how to use the Caesar Cipher and want to learn about it's functionality.
 >As a first time user, I want to learn about a Caesar Cipher is & how to use one.
 
 # Design
-This websites design follows a minimalistic approach for a more professional look. I took inspiration from simplistic websites such as the Apple Store. It is an intuitive, easily navigable website with a bright colour scheme that aims for an elegant, simplistic look. 
+The website follows a minimalistic design approach for a more professional look. I took inspiration from simplistic websites such as the Apple Store. It is an intuitive, easily navigatable website with a bright colour scheme that aims for an elegant, simplistic look. 
 ## Colour Scheme
-This website uses a purple colour palette. The primary colours used throughout the website are dark purple (#7f39fb), violet (#be83f1), pink (#e680c7) & grey (#a6a6a6;). I chose a bright colour scheme to make the design unique and to catch the users attention. 
+The website uses a purple colour palette. The primary colours used throughout the website are dark purple (#7f39fb), violet (#be83f1), pink (#e680c7) & grey (#a6a6a6;). I chose a bright colour scheme to make the design unique and to catch the users attention. 
 
 ## Typography
 The headers throughout the website are using the <strong>Roboto</strong> font with letter spacing of 4px. The rest of the website also uses the <strong>Roboto</strong>.
@@ -75,9 +75,9 @@ The wireframes were created using [Canva](https://www.canva.com/)
 # **Features**
 
 ## Home Screen
-* At the top of the page, the thick purple heading displays the websites name 'Caesar Cipher' with a animated lock icon positioned to the right of the text.
+* At the top of the page, the thick purple heading displays the websites name 'Caesar Cipher' with an animated lock icon positioned to the right of the text.
 * The home screen displays 3 pink buttons the users can click - 'Encrypt', 'Decrypt' & 'Help'.
-* There are 2 prompts to encoruage the user to take an action (click button) 
+* There are 2 prompts to encourage the user to take an action (click button) 
 * The heading is thick with a dark purple background colour. The text colour is white to make it visible over the dark background.
 * The heading indicates clearly the websites purpose
 * The footer contains a wave image with the colours from the purple palette to match the theme of the site.
@@ -89,7 +89,7 @@ The wireframes were created using [Canva](https://www.canva.com/)
 * 'Encrypt' or 'Decrypt' text will be displayed based on the button the user clicked.
 * There is an input field where the user can enter the message they want to encrypt/decrypt.
 * There is an input field where the user can enter the key. Decryted text will only be readable if the user knows the key used to encrypt the text.
-* When the 'encrypt', 'decrypt' button is clicked, a loading symbil is displayed while the text is being translated into ciphertext. The ciphertext is then displayed to the user.
+* When the 'encrypt', 'decrypt' button is clicked, a loading symbol is displayed while the text is being translated into ciphertext. The ciphertext is then displayed to the user.
 * This section has a return arrow that returns to the home page.
 
 ![image](https://user-images.githubusercontent.com/83119583/185808924-3cb594ac-7af6-495b-ad7a-e4069fac572d.png)
@@ -98,8 +98,8 @@ The wireframes were created using [Canva](https://www.canva.com/)
 
 ## Help Section
 * The help section gives the user information about what a Caesar Cipher is & how to use one.
-* The design is identical to the home screen, there is a thick purple heading that displays the websites name 'Caesar Cipher' with a animated lock icon positioned to the right of the text. The footer contains a wave image with the colours from the purple palette to match the theme of the site.
-* There is a summary paragraph that explains how to use the Caesair Cipher.
+* The design is identical to the home screen, there is a thick purple heading that displays the websites name 'Caesar Cipher' with an animated lock icon positioned to the right of the text. The footer contains a wave image with the colours from the purple palette to match the theme of the site.
+* There is a summary paragraph that explains how to use the Caesar Cipher.
 ![image](https://user-images.githubusercontent.com/83119583/186232633-b46d9554-d46d-464b-b467-49383e1325b3.png)
 
 # **Testing**
@@ -123,10 +123,10 @@ When I tested my website, an audit report was returned indicating that my websit
 
 ## Event Listener Testing
 * All button clicks trigger an event. When the 'encrypt' or 'decrypt' button is clicked on the home screen, the home page is hidden and the input section is displayed.
-* The return button in the encrypt decrypt section hides the input section and displays the home screen when clicked.
-* The help button on the home screen, opens the help.html page and displays the help page.
-* The return button in the help page returns to index.html (the home screen) when clicked.
-* The 'encrypt'/'decrypt' display the ciphertext when clicked.
+* The return button in the 'encrypt/decrypt' section hides the input section and displays the home screen when clicked.
+* The help button opens the help.html page and displays the help page.
+* The return button on the help page returns to index.html (the home screen) when clicked.
+* The 'encrypt'/'decrypt' button displays the ciphertext when clicked.
 
 ## Manual Testing
 | Feature                 | Expect                                                 | Action             | Result            |
@@ -138,7 +138,7 @@ When I tested my website, an audit report was returned indicating that my websit
 | Help Button | When clicked user is brought to the help page | Clicked 'help' button | Help page displayed with information on how to use the Caesar-Cipher |
 | Return Button - encrypt | When clicked, the input fields are hidden and the user is returned to the home landing screen | Click 'encrypt', click the 'return arrow' positioned in the top left corner | Input fields were hidden and returned to home landing screen |
 | Return Button - decrypt | When clicked, the input fields are hidden and the user is returned to the home landing screen | Click 'decrypt', click the 'return arrow' positioned in the top left corner | Input fields were hidden and returned to home landing screen |
-| Return Button - help |  When clicked, the input fields are hidden and the user is returned to the home landing screen | Click 'help', click the 'return arrow' positioned in the top left corner | nput fields were hidden and returned to home landing screen |
+| Return Button - help |  When clicked, user is returned to the home landing screen | Click 'help', click the 'return arrow' positioned in the top left corner |  Returned to home landing screen |
 | <strong>1A</strong> Encryption - string no uppercase no symbols | When the 'encrypt' button is clicked, the loading symbol should spin for 3 seconds, then the encrypted text should fade in | Click 'encrypt' enter 'hello' in the 'MESSAGE TO ENCRYPT:' field & enter '5' in the 'KEY NUMBER:' field. Click 'encrypt' button | The loader spun for 3 seconds and got a encrypted output of 'mjqqt' |
 | Decryption - previous encryption test <strong>1A</strong> | When the 'decrypt' button is clicked, the loading symbol should spin for 3 seconds, then the decrypted text should fade in | Click 'decrypt' enter 'mjqqt' in the 'MESSAGE TO DECRYPT:' field & enter '5' in the 'KEY NUMBER:' field. Click 'decrypt' button | The loader spun for 3 seconds and got a encrypted output of 'hello' |
 | <strong>1B</strong> Encryption - string no uppercase no symbols | When the 'encrypt' button is clicked, the loading symbol should spin for 3 seconds, then the encrypted text should fade in | Click 'encrypt' enter 'pineapple' in the 'MESSAGE TO ENCRYPT:' field & enter '27' in the 'KEY NUMBER:' field. Click 'encrypt' button | The loader spun for 3 seconds and got a decrypted output of 'QJOFBQQMF' |
