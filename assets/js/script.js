@@ -121,7 +121,6 @@ function getKey() {
 
    let key = +document.getElementById('key').value;
    if (key >= 1 && key <= max_key_length) {
-      console.log("key is returned");
       return key;
    }
 }
@@ -156,8 +155,6 @@ function encryptMessage(message, key) {
 
 
    }
-
-   console.log(translated);
 
    if (translated.includes("undefined")) {
       let newTranslated = translated.replaceAll('undefined', '');
@@ -197,12 +194,11 @@ function decryptMessage(message, key) {
       translated += letters[letterIndex];
    }
 
-   console.log(translated);
+  
    if (translated.includes("undefined")) {
       let newTranslated = translated.replaceAll('undefined', '')
       ciphertext.textContent = newTranslated;
    } else {
-      ("this is the replace all else")
       ciphertext.textContent = translated;
    }
 
