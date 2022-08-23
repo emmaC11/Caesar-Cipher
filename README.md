@@ -100,6 +100,15 @@ When I tested my website, an audit report was returned indicating that my websit
 | Feature                 | Expect                                                 | Action             | Result            |
 | -------------           | -------------                                          | ------------------ | -------           |
 | Website Github Pages Deployment Link | When clicked the Caesar-Cipher website opens in a tab on chosen browser  | Clicked deployment link in about section in GitHub Repo     | Website loaded sucessfully in tab |
+| Website Responsiveness | When the website is viewed on different screen sizes, it is reponsive & resizes appropriately | Open chrome dev tools and toggle through each of the different screen sizes | Website was fully responsive |
+| Encrypt Button | When clicked the input fields are displayed to the user with encrypt headings | Clicked 'encrypt' button | Input fields displayed with encrypt headings |
+| Decrypt Button | When clicked the input fields are displayed to the user with decrypt headings | Clicked 'decrypt' button | Input fields displayed with decrypt headings |
+| Help Button | When clicked user is brought to the help page | Clicked 'help' button | Help page displayed with information on how to use the Caesar-Cipher |
+| Return Button - encrypt | When clicked, the input fields are hidden and the user is returned to the home landing screen | Click 'encrypt', click the 'return arrow' positioned in the top left corner | Input fields were hidden and returned to home landing screen |
+| Return Button - decrypt | When clicked, the input fields are hidden and the user is returned to the home landing screen | Click 'decrypt', click the 'return arrow' positioned in the top left corner | Input fields were hidden and returned to home landing screen |
+| Return Button - help |  When clicked, the input fields are hidden and the user is returned to the home landing screen | Click 'help', click the 'return arrow' positioned in the top left corner | nput fields were hidden and returned to home landing screen |
+| <strong>1A</strong> Encryption - string no uppercase no symbols | When the 'encrypt' button is clicked, the loading symbol should spin for 3 seconds, then the encrypted text should fade in | Click 'encrypt' enter 'hello' in the 'MESSAGE TO ENCRYPT:' field & enter '5' in the 'KEY NUMBER:' field. Click 'encrypt' button | The loader spun for 3 seconds and got a encrypted output of 'mjqqt' |
+| Decryption - previous encryption test <strong>1A</strong> | When the 'decrypt' button is clicked, the loading symbol should spin for 3 seconds, then the decrypted text should fade in | Click 'decrypt' enter 'mjqqt' in the 'MESSAGE TO DECRYPT:' field & enter '5' in the 'KEY NUMBER:' field. Click 'decrypt' button | The loader spun for 3 seconds and got a encrypted output of 'hello'
 
 ## Bugs Identified During Testing
 * Add content when compleying manual testing
