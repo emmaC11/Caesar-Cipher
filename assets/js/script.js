@@ -254,7 +254,7 @@ function loadEffect() {
 generateBtn.addEventListener('click', () => {
    let includesSpaces = message.value.includes(" ")
 
-   if (getMessage() === "" || getKey() === undefined || includesSpaces) {
+   if (getMessage() === "" || getKey() === undefined || includesSpaces || getKey() === 52) {
       alert(`Fields cannot be left blank\nFields cannot have spaces\nThe key value must be greater than 0 and less than ${max_key_length}`);
    } else {
 
