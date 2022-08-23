@@ -10,71 +10,53 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Caesar Cipher</title>
 </head>
-
 <body>
     <header>
-        <h1 id="main-title">Caesar-Cipher <lord-icon
-            src="https://cdn.lordicon.com/huwchbks.json"
-            trigger="loop"
-            delay="2000"
-            colors="primary:#ffffff,secondary:#be83f1"
-            style="width:60px;height:60px">
-            </lord-icon></h1>
-            <a class="return" id="return" onclick="hideButtons()" href="index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
-            
-        
+        <h1 id="main-title">Caesar-Cipher <lord-icon src="https://cdn.lordicon.com/huwchbks.json" trigger="loop"
+                delay="2000" colors="primary:#ffffff,secondary:#be83f1" style="width:60px;height:60px">
+            </lord-icon>
+        </h1>
+        <a class="return" id="return" onclick="hideButtons()" href="index.html"><i
+                class="fa-solid fa-circle-arrow-left"></i></a>
     </header>
-
-    
-
-<div id="user-options">
-    <h2 id="prompt">Would you like to encrypt or decrypt a message?</h2>
-    <h2 id="typetext"></h2>
-    <div class="choice-buttons">
-        <a class="btn" id="encrypt-btn" data-type="encrpyt" onclick="hideButtons(); displayCipher()">Encrypt</a>
-        <a class="btn" id="decrypt-btn" data-type="decrypt" onclick="hideButtons(); displayCipher()">Decrypt</a>
-        <a class="btn" href="help.html" id="help-btn">Help</a>
-    </div>
-    
-
-</div>
-
-
-
-  <div id="cipher-container">
-    <div class="cipher-content">
-       
-    
-        <div class="encrypt-decrypt">
-            <div class="encrypt">
-                <label for="message" id="messageLabel">Message to encrypt:</label>
-                <br>
-                <input class="text-input" type="text" id="message" name="message" required>
-                <br>
-                <label for="key">Key Number:</label>
-                <br>
-                <input class="text-input" type="text" id="key" name="key" required>
-                <br>
-                <button id="encrypt-decrypt" onclick="clearOutputText()">Encrypt</button>
-
-                <div class="message encrypted" id="output">
-                    <h4 id="outputLabel">Encrypted Text:</h4>
-                    <br>
-                    <span id="ciphertext" title="ciphertext"></span>
-                </div>
-
-                <div class="spinner" id="load"></div>
-            </div>
-          
+    <div id="user-options">
+        <h2 id="prompt">Would you like to encrypt or decrypt a message?</h2>
+        <h2 id="typetext"></h2>
+        <div class="choice-buttons">
+            <a class="btn" id="encrypt-btn" data-type="encrpyt" onclick="hideButtons(); displayCipher()">Encrypt</a>
+            <a class="btn" id="decrypt-btn" data-type="decrypt" onclick="hideButtons(); displayCipher()">Decrypt</a>
+            <a class="btn" href="help.html" id="help-btn">Help</a>
         </div>
     </div>
+    <div id="cipher-container">
+        <div class="cipher-content">
+            <div class="encrypt-decrypt">
+                <div class="encrypt">
+                    <label for="message" id="messageLabel">Message to encrypt:</label>
+                    <br>
+                    <input class="text-input" type="text" id="message" name="message" required>
+                    <br>
+                    <label for="key">Key Number:</label>
+                    <br>
+                    <input class="text-input" type="text" id="key" name="key" required>
+                    <br>
+                    <button id="encrypt-decrypt" onclick="clearOutputText()">Encrypt</button>
 
-    
-</div>
+                    <div class="message encrypted" id="output">
+                        <h4 id="outputLabel">Encrypted Text:</h4>
+                        <br>
+                        <span id="ciphertext" title="ciphertext"></span>
+                    </div>
 
-<footer>
-    <div class="footer"></div>
-</footer>
+                    <div class="spinner" id="load"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer"></div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/c05c29f2a2.js" crossorigin="anonymous"></script>
