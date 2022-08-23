@@ -75,7 +75,7 @@ The wireframes were created using [Canva](https://www.canva.com/)
 * To verify that the HTML code written to the best standard, I conducted validator testing with the W3C Markup Validator. I fixed the errors and warnings and currently there are no errors or warnings in the HTML code.
 ![image](https://user-images.githubusercontent.com/83119583/186231274-499561b7-b7ed-4221-b534-f279cbc4499f.png)
 
-*CSS styling was validated using the W3C CSS Validation Service to ensure the code was written to the expected standard. No errors were found when passing the code through the W3C CSS validator.
+* CSS styling was validated using the W3C CSS Validation Service to ensure the code was written to the expected standard. No errors were found when passing the code through the W3C CSS validator.
 ![image](https://user-images.githubusercontent.com/83119583/186231591-0e67735b-b23f-4f09-a3b8-32b7b7e72bf4.png)
 
 
