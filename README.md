@@ -96,6 +96,11 @@ When I tested my website, an audit report was returned indicating that my websit
 * The return button in the help page returns to index.html (the home screen) when clicked.
 * The 'encrypt'/'decrypt' display the ciphertext when clicked.
 
+## Manual Testing
+| Feature                 | Expect                                                 | Action             | Result            |
+| -------------           | -------------                                          | ------------------ | -------           |
+| Website Github Pages Deployment Link | When clicked the Caesar-Cipher website opens in a tab on chosen browser  | Clicked deployment link in about section in GitHub Repo     | Website loaded sucessfully in tab |
+
 ## Bugs Identified During Testing
 * Add content when compleying manual testing
 
