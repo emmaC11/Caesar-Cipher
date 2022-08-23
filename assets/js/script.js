@@ -1,9 +1,5 @@
 let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let max_key_length = letters.length;
-let shiftedLetters = "";
-
-
-
 
 //ENCRYPT DECRYPT BUTTONS
 const encrypt = document.getElementById('encrypt-btn');
@@ -37,7 +33,7 @@ let x = 0;
 let currentPhrase = [];
 let isDeletingLetter = false;
 
-//LTYPEWRITER FUNCTION
+//LTYPEWRITER FUNCTION - referenced following video https://www.youtube.com/watch?v=mULM6KcF_mo
 function typewriter() {
    //LOOP THROUGH PHRASES ARRAY
    typeText.innerText = currentPhrase.join('');
@@ -88,21 +84,6 @@ function typewriter() {
 typewriter();
 
 
-//CAPTURES MODE - ENCRYPT OR DECRYPT
-function modeEncrypt() {
-   let mode = "encrypt";
-   console.log(mode);
-   return mode;
-
-}
-
-function modeDecrypt() {
-   let mode = "decrypt";
-   console.log(mode);
-   return mode;
-}
-
-
 //HIDE BUTTONS WHEN CLICKED
 function hideButtons() {
    if (encrypt.style.display === "none" && decrypt.style.display === "none" && introText.style.display === "none") {
@@ -121,10 +102,8 @@ function hideButtons() {
 function displayCipher() {
    if (cipherContent.style.display === "none") {
       cipherContent.style.display = "flex";
-      console.log("this is the if");
    } else {
       cipherContent.style.display = "none";
-      console.log("this is the else");
    }
 
 }
@@ -133,7 +112,6 @@ function displayCipher() {
 function getMessage() {
    // get text from input fields
    let message = document.getElementById('message').value;
-   console.log(message);
    return message;
 
 }
@@ -145,16 +123,11 @@ function getKey() {
    if (key >= 1 && key <= max_key_length) {
       console.log("key is returned");
       return key;
-   } else {
-      //alert(`The key value must be greater than 0 and less than ${max_key_length}`);
-
    }
-   console.log(key);
-   console.log(typeof key);
 }
 
 
-//ENCRYPT/DECRYPT MESSAGE
+//ENCRYPT MESSAGE
 function encryptMessage(message, key) {
 
    let translated = "";
@@ -164,7 +137,6 @@ function encryptMessage(message, key) {
 
       //GETS INDEX OF LETTER IN LETTERS STRING
       let letterIndex = letters.indexOf(letter);
-      console.log(letterIndex);
 
       //IF LETTER IS NOT RECOGNISED IE IS A SYMBOL OR NUMBER STAYS THE SAME
       if (letterIndex == -1) {
@@ -173,18 +145,12 @@ function encryptMessage(message, key) {
       //SHIFT LETTER BY KEY NUMBER
       else {
          letterIndex += key;
-         console.log(letterIndex);
       }
 
       //EXCEPTION HANDLING IF LETTER EXCEEDS LENGHT OF LETTER STRING DUE TO KEY VALUE
       if (letterIndex >= letters.length) {
          letterIndex -= letters.length;
-         console.log(letterIndex);
-      } else if (letterIndex < 0) {
-         //letterIndex += letters.length
-         console.log(letterIndex);
-      }
-
+      } 
       //ADDS THE SHIFTED LETTERS TO THE TRANSLATED VARIABLE
       translated += letters[letterIndex];
 
@@ -195,20 +161,13 @@ function encryptMessage(message, key) {
 
    if (translated.includes("undefined")) {
       let newTranslated = translated.replaceAll('undefined', '');
-      console.log("this is the replace all if");
       ciphertext.textContent = newTranslated;
    } else {
-      ("this is the replace all else");
       ciphertext.textContent = translated;
-   }
-
-
-
-
-   console.log(message);
-   console.log(key);
+   }  
 }
 
+//DECRYPT MESSAGE
 function decryptMessage(message, key) {
    let translated = ""
    key = -key;
@@ -217,7 +176,6 @@ function decryptMessage(message, key) {
 
       //GETS INDEX OF LETTER IN LETTERS STRING
       let letterIndex = letters.indexOf(letter);
-      console.log(letterIndex);
 
       //IF LETTER IS NOT RECOGNISED IE IS A SYMBOL OR NUMBER STAYS THE SAME
       if (letterIndex == -1) {
@@ -226,16 +184,13 @@ function decryptMessage(message, key) {
       //SHIFT LETTER BY KEY NUMBER
       else {
          letterIndex += key;
-         console.log(letterIndex);
       }
 
       //EXCEPTION HANDLING IF LETTER EXCEEDS LENGHT OF LETTER STRING DUE TO KEY VALUE
       if (letterIndex >= letters.length) {
          letterIndex -= letters.length;
-         console.log(letterIndex);
       } else if (letterIndex < 0 && letterIndex != -1) {
          letterIndex += letters.length
-         console.log(letterIndex);
       }
 
       //ADDS THE SHIFTED LETTERS TO THE TRANSLATED VARIABLE
@@ -245,7 +200,6 @@ function decryptMessage(message, key) {
    console.log(translated);
    if (translated.includes("undefined")) {
       let newTranslated = translated.replaceAll('undefined', '')
-      console.log("this is the replace all if");
       ciphertext.textContent = newTranslated;
    } else {
       ("this is the replace all else")
@@ -257,14 +211,10 @@ function decryptMessage(message, key) {
 
 //ENCRYPT BUTTON EVENT LISTENER
 encrypt.addEventListener('click', () => {
-   console.log("this is the encrypt event listerner");
-   modeEncrypt();
    displayCipher();
    heading.innerText = "Encrypt";
    if (heading.innerText === "Encrypt") {
       cipherMode = "encrypt";
-   } else {
-      console.log("the heading is not encrypt");
    }
 
    //DISPLAY RETURN ARROW WHEN CLICKED
@@ -274,8 +224,6 @@ encrypt.addEventListener('click', () => {
 
 //DECRYPT BUTTON EVENT LISTENER
 decrypt.addEventListener('click', () => {
-   console.log("this is the decrypt event listener");
-   modeDecrypt();
    displayCipher();
    heading.innerText = "Decrypt";
    messageLabel.innerText = "Message to decrypt:";
@@ -306,28 +254,8 @@ function loadEffect() {
 }
 
 
-// function keyValidate()
-// {
-//    let valid = true
-//    if (key >= 1 && key <= max_key_length) {
-//       console.log("key is returned")
-//       return key
-//    } else {
-//       valid = false
-//       alert(`The key value must be greater than 0 and less than ${max_key_length}`);
-// }
-
-//    console.log(`this is the key valid function ${valid}`)
-//    return valid
-
-// }
-
-
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
 generateBtn.addEventListener('click', () => {
-   console.log("this is the decrypt event listener");
-   console.log(`the cipher mode is ${cipherMode}`)
-
    let includesSpaces = message.value.includes(" ")
 
    if (getMessage() === "" || getKey() === undefined || includesSpaces) {
@@ -343,25 +271,4 @@ generateBtn.addEventListener('click', () => {
       loadEffect();
 
    }
-
-
-
-
-   //DISPLAY LABEL WHEN BUTTON IS CLICKED
-   // outputLabel.style.display = "block"
-
-
-
-
 })
-
-
-
-
-
-
-// const timeout = 0
-
-// function displayLoader(){
-//    timeout = setTimeout(displayCipherText, 3000);
-// }
