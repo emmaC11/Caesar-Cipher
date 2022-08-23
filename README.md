@@ -86,6 +86,8 @@ The wireframes were created using [Canva](https://www.canva.com/)
 ## Lighthouse Testing
 * The Lighthouse tool in Chrome DevTools is used to test a websites performance & accessibility. It is an open-source automated tool used to improve the quality of webpages. 
 When I tested my website, an audit report was returned indicating that my website has high performance and is accessible.
+![image](https://user-images.githubusercontent.com/83119583/186232237-71022581-671e-4988-b430-b1ba0f216d84.png)
+
 
 ## Event Listener Testing
 * All button clicks trigger an event. When the 'encrypt' or 'decrypt' button is clicked on the home screen, the home page is hidden and the input section is displayed.
