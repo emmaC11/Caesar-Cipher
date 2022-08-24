@@ -80,7 +80,7 @@ The wireframes were created using [Canva](https://www.canva.com/)
 * The home screen displays 3 pink buttons the users can click - 'Encrypt', 'Decrypt' & 'Help'.
 * There are 2 prompts to encourage the user to take an action (click button) 
 * The heading is thick with a dark purple background colour. The text colour is white to make it visible over the dark background.
-* The heading indicates clearly the websites purpose
+* The heading clearly indicates the websites purpose
 * The footer contains a wave image with the colours from the purple palette to match the theme of the site.
 
 ![image](https://user-images.githubusercontent.com/83119583/185808527-ab56cf33-f989-4069-a52b-3f91bac32bc1.png)
@@ -88,8 +88,8 @@ The wireframes were created using [Canva](https://www.canva.com/)
 ## Encrypt/Decrypt Section
 * When a user clicks the 'encrypt' or 'decrypt' button, a screen is displayed where they can input a message and a key.
 * 'Encrypt' or 'Decrypt' text will be displayed based on the button the user clicked.
-* There is an input field where the user can enter the message they want to encrypt/decrypt.
-* There is an input field where the user can enter the key. Decryted text will only be readable if the user knows the key used to encrypt the text.
+* There is an input field where the user can enter a message they want to encrypt/decrypt.
+* There is an input field where the user can enter a key. Decrypted text will only be readable if the user knows the key used to encrypt the text.
 * When the 'encrypt', 'decrypt' button is clicked, a loading symbol is displayed while the text is being translated into ciphertext. The ciphertext is then displayed to the user.
 * This section has a return arrow that returns to the home page.
 
