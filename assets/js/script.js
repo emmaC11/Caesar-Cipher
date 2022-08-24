@@ -9,7 +9,7 @@ const generateBtn = document.getElementById('encrypt-decrypt');
 //ENCRYPT DECRYPT SECTION
 const cipherContent = document.getElementById('cipher-container');
 let message = document.getElementById('message');
-let key = document.getElementById('key').value;
+//let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
 const heading = document.getElementById('main-title');
 const introText = document.getElementById('user-options');
@@ -62,7 +62,7 @@ function typewriter() {
       //when all letters are removed, move onto next item in array, now adding letters
       if (isDeletingLetter && x === 0) {
          currentPhrase = [];
-         isDeletingLetter = false
+         isDeletingLetter = false;
          i++;
 
          //if reach end of array, reset back to 0
@@ -166,7 +166,7 @@ function encryptMessage(message, key) {
 
 //DECRYPT MESSAGE
 function decryptMessage(message, key) {
-   let translated = ""
+   let translated = "";
    key = -key;
 
    for (let letter of message) {
@@ -187,7 +187,7 @@ function decryptMessage(message, key) {
       if (letterIndex >= letters.length) {
          letterIndex -= letters.length;
       } else if (letterIndex < 0 && letterIndex != -1) {
-         letterIndex += letters.length
+         letterIndex += letters.length;
       }
 
       //ADDS THE SHIFTED LETTERS TO THE TRANSLATED VARIABLE
@@ -196,7 +196,7 @@ function decryptMessage(message, key) {
 
   
    if (translated.includes("undefined")) {
-      let newTranslated = translated.replaceAll('undefined', '')
+      let newTranslated = translated.replaceAll('undefined', '');
       ciphertext.textContent = newTranslated;
    } else {
       ciphertext.textContent = translated;
@@ -215,22 +215,22 @@ encrypt.addEventListener('click', () => {
 
    //DISPLAY RETURN ARROW WHEN CLICKED
    returnArrow.style.display = "block";
-   footer.style.backgroundImage = "none"
-})
+   footer.style.backgroundImage = "none";
+});
 
 //DECRYPT BUTTON EVENT LISTENER
 decrypt.addEventListener('click', () => {
    displayCipher();
    heading.innerText = "Decrypt";
    messageLabel.innerText = "Message to decrypt:";
-   encryptDecryptButton.innerText = "Decrypt"
+   encryptDecryptButton.innerText = "Decrypt";
    outputLabel.innerText = "Decrypted Text:";
 
    //DISPLAY RETURN ARROW WHEN CLICKED
    returnArrow.style.display = "block";
    footer.style.backgroundImage = "none";
 
-})
+});
 
 
 //STORE CIPHERTEXT OUTPUT IN VARIABLE & DISPLAY CHANGES IN FUNCTION
@@ -239,20 +239,20 @@ let spinner = document.getElementById('load');
 let timeout = "";
 
 function displayOutput() {
-   ciphertextoutput.style.display = "block"
+   ciphertextoutput.style.display = "block";
    spinner.style.display = "none";
 }
 
 function loadEffect() {
    timeout = setInterval(displayOutput, 3000);
-   spinner.style.display = "block"
-   ciphertextoutput.style.display = "none"
+   spinner.style.display = "block";
+   ciphertextoutput.style.display = "none";
 }
 
 
 //ENCRYPT DECRYPT BUTTON EVENT LISTENER
 generateBtn.addEventListener('click', () => {
-   let includesSpaces = message.value.includes(" ")
+   let includesSpaces = message.value.includes(" ");
 
    if (getMessage() === "" || getKey() === undefined || includesSpaces || getKey() === 52) {
       alert(`Fields cannot be left blank\nFields cannot have spaces\nThe key value must be greater than 0 and less than ${max_key_length}`);
@@ -267,4 +267,4 @@ generateBtn.addEventListener('click', () => {
       loadEffect();
 
    }
-})
+});
