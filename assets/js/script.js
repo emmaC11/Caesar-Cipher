@@ -9,7 +9,6 @@ const generateBtn = document.getElementById('encrypt-decrypt');
 //ENCRYPT DECRYPT SECTION
 const cipherContent = document.getElementById('cipher-container');
 let message = document.getElementById('message');
-//let key = document.getElementById('key').value;
 let ciphertext = document.getElementById('ciphertext');
 const heading = document.getElementById('main-title');
 const introText = document.getElementById('user-options');
