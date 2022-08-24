@@ -104,11 +104,14 @@ The wireframes were created using [Canva](https://www.canva.com/)
 
 # **Testing**
 ## Validator Testing
-* To verify that the HTML code written to the best standard, I conducted validator testing with the W3C Markup Validator. I fixed the errors and warnings and currently there are no errors or warnings in the HTML code.
+* To verify that the HTML code was written to the best standard, I conducted validator testing with the W3C Markup Validator. I fixed the errors and warnings and currently there are no errors or warnings in the HTML code.
 ![image](https://user-images.githubusercontent.com/83119583/186231274-499561b7-b7ed-4221-b534-f279cbc4499f.png)
 
 * CSS styling was validated using the W3C CSS Validation Service to ensure the code was written to the expected standard. No errors were found when passing the code through the W3C CSS validator.
 ![image](https://user-images.githubusercontent.com/83119583/186231591-0e67735b-b23f-4f09-a3b8-32b7b7e72bf4.png)
+
+* To verify that the JavaScript code was written to the best standard, I used the JSHint validator to test my JS file. I fixed the errors such as unused variables & missing semicolons. Currently I have one warning that the hideButtons() function is never used, however I am calling it within a click event in the HTML file.
+![image](https://user-images.githubusercontent.com/83119583/186358290-0b9bec2e-d236-4bfa-9db7-cb5be7ef1f63.png)
 
 
 
@@ -118,6 +121,7 @@ The wireframes were created using [Canva](https://www.canva.com/)
 ## Lighthouse Testing
 * The Lighthouse tool in Chrome DevTools is used to test a websites performance & accessibility. It is an open-source automated tool used to improve the quality of webpages. 
 When I tested my website, an audit report was returned indicating that my website has high performance and is accessible.
+
 
 ![image](https://user-images.githubusercontent.com/83119583/186232237-71022581-671e-4988-b430-b1ba0f216d84.png)
 
@@ -232,8 +236,22 @@ I used the following commands throughout the development of this project:
 6. A clone of the project will be created locally on your machine.
 **Note** - git commands only work if git is installed on your machine. Find installation documentation [here](https://git-scm.com/).
 
-
 # **Credits/References**
+
+## Technologies Used
+* [JavaScript](https://www.javascript.com/)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
+* [Google Fonts](https://fonts.google.com/)
+* [Github](https://github.com/emmaC11/PP1-starwars)
+* [GitPod](https://gitpod.io/)
+* [Font Awesome](https://fontawesome.com/)
+* [Lordicon](https://lordicon.com/icons/wired/outline?categoryId=3&premium=0)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+* [W3C HTML Validator](https://validator.w3.org/#validate_by_input)
+* [JS Hint Validator](https://jshint.com/)
+
+
 ## Content & Media
 * The footer image was generated using [Haikei](https://app.haikei.app/)
 * Animated lock icon in header is from [Lordicon](https://lordicon.com/icons/wired/outline?categoryId=3&premium=0)
@@ -251,6 +269,7 @@ I used the following commands throughout the development of this project:
 * [Page Loader](https://www.w3schools.com/howto/howto_css_loader.asp) & [Timeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout) were referenced when creating the loading effect and the typewriter.
 * [CSS Fade In](https://blog.hubspot.com/website/css-fade-in) referenced when creating the fade-in effect on the outputted cipertext.
 * [Typewriter](https://www.youtube.com/watch?v=mULM6KcF_mo) video for the typewriter effect on the home screen.
+* [Course Content](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/) from the Code Institute LMS
 
 ## Achknowledgements
 I would like to thank my mentor Ronan for his guidance throughout my project.
