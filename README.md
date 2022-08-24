@@ -189,9 +189,11 @@ When I tested my website, an audit report was returned indicating that my websit
 * Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
 ![image](https://user-images.githubusercontent.com/83119583/185887975-9b112f88-6334-4dea-adc7-a9ae1520ae4e.png)
 ![image](https://user-images.githubusercontent.com/83119583/185888848-3c1f94e4-3665-4e2a-bde1-32e7c3169c2c.png)
+* My mentor gave me some feedback that some of my commit messages are slightly vague and that I am covering more in my commit than what my commit message is displaying.
 * When trying to decrypt strings with spaces, the ciphertext output contained empty spaces in incorrect places due to the spaces. To fix this error, I enforced validation where the input must not include any space characters.
 * When trying to encrypt string with a key of 52, the encrypted output was identical to original test as the length of the string containing the characters is 52. To fix this error, I enforced validation where the key cannot be equal to 51.
 * When encrypting/decrypting a string that contains a symbol, it displays undefined. To fix this error, I used the replaceAll() function to replace the undefined text with an empty space (') meaning it would not display in the ciphertext output.
+* There is a bug in the solution where the letter 'z' cannot be decrypted. It returns a blank space, this will be addressed.
 
 # **Development Environment**
 ## Dev Structure
