@@ -31,6 +31,7 @@ The secret codes can only be understood if the user knows the key to the codes.
     * [Run Locally](#run-locally)
 
 * [Credits/References](#creditsreferences)
+    * [Technologies Used](#technologies-used)
     * [Content & Media](#content--media)
     * [Code](#code)
     * [Achknowledgements](#achknowledgements)
