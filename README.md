@@ -236,6 +236,9 @@ I used the following commands throughout the development of this project:
 # **Credits/References**
 ## Content & Media
 * The footer image was generated using [Haikei](https://app.haikei.app/)
+* Animated lock icon in header is from [Lordicon](https://lordicon.com/icons/wired/outline?categoryId=3&premium=0)
+* Return arrow icon is from [Font Awesome](https://fontawesome.com/)
+* Roboto font is imported from (Google Fonts)[https://fonts.google.com/]
 
 ## Code
 * I used the 'Invent Your Own Computer Games With Python'book to help with the encrypt/decrypt algorithm
