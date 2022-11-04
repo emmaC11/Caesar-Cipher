@@ -35,6 +35,7 @@ The secret codes can only be understood if the user knows the key to the codes.
     * [Content & Media](#content--media)
     * [Code](#code)
     * [Achknowledgements](#achknowledgements)
+    * [Grade](#grade)
 # **User Experience & Design**
 
 # User Stories
@@ -277,4 +278,7 @@ I used the following commands throughout the development of this project:
 ## Achknowledgements
 I would like to thank my mentor Ronan for his guidance throughout my project.
 I would also like to thank Richard for his masterclasses.
+
+## Grade
+This project has achieved a Merit grade.
 
